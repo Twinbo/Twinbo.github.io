@@ -43,7 +43,11 @@ Because Wikipedia was lunched in 2001 it was not feasiable to find text document
 | 2024 | Found | 4515 |
 | 2025 | Found | 4599 |
 
-The table above illustrate the number of words gathered from the airports in the USA from weekpidea over the years, but it can be observed that the number of words has been substancually increased over the years and this is a problem for analyzing how the security in the aiprots has become more strict and increased. The reason for this is because the later years contains more secruety-related language which than the sparse early-year pages, this can also be observed in the table bellow that contains the TF-IDF scores. These TF-IDF scores needs to be intepretated cautiosly because of the amount of available text have changed alot over the years which can be absorved in the table above. As mentioned the table below shows the TF-IDF scores of specifc terms that correlated to the securyity in the aiports, the reason for this table is interresting is because the TF-IDF scores messure how important a word is in a giving document, this means it will show an indication of how often a geving word is mentioned in the text from 2003 and 2010.
+The table above illustrate the number of words gathered from the airports in the USA from weekpidea over the years, but it can be observed that the number of words has been substancually increased over the years and this is a problem for analyzing how the security in the aiprots has become more strict and increased. The reason for this is because the later years contains more secruety-related language than the sparse early-years. As a result of this, the later documents are more likely to contain security-related language simply because the documents are longer and more detialed.
+
+These 
+
+These TF-IDF scores needs to be intepretated cautiosly because of the amount of available text have changed alot over the years which can be absorved in the table above. As mentioned the table below shows the TF-IDF scores of specifc terms that correlated to the securyity in the aiports, the reason for this table is interresting is because the TF-IDF scores messure how important a word is in a giving document, this means it will show an indication of how often a geving word is mentioned in the text from 2003 and 2010.
 
 | TERM      | TF-IDF SCORE (2003) | TF-IDF SCORE (2010) | PERCENT CHANGE (2003→2010) |
 |-----------|---------------------|---------------------|----------------------------|
