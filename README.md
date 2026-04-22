@@ -45,9 +45,7 @@ Because Wikipedia was lunched in 2001 it was not feasiable to find text document
 
 The table above illustrate the number of words gathered from the airports in the USA from weekpidea over the years, but it can be observed that the number of words has been substancually increased over the years and this is a problem for analyzing how the security in the aiprots has become more strict and increased. The reason for this is because the later years contains more secruety-related language than the sparse early-years. As a result of this, the later documents are more likely to contain security-related language simply because the documents are longer and more detialed.
 
-These 
-
-These TF-IDF scores needs to be intepretated cautiosly because of the amount of available text have changed alot over the years which can be absorved in the table above. As mentioned the table below shows the TF-IDF scores of specifc terms that correlated to the securyity in the aiports, the reason for this table is interresting is because the TF-IDF scores messure how important a word is in a giving document, this means it will show an indication of how often a geving word is mentioned in the text from 2003 and 2010.
+These issues is also important to take into consideration when interpretating the TF-IDF scores shown in the following table. TF-IDF scores messure how important a term is within a document relative to the full collection of documents. In this case the TF-IDF scores shows an indication of how promenent selected security-related words are in the airport texts from 2003 and 2010. But because of the massive difference of availe text between 2003 and 2010 the TF-IDF values needs to be intepretaed cautiously. 
 
 | TERM      | TF-IDF SCORE (2003) | TF-IDF SCORE (2010) | PERCENT CHANGE (2003→2010) |
 |-----------|---------------------|---------------------|----------------------------|
@@ -58,16 +56,21 @@ These TF-IDF scores needs to be intepretated cautiosly because of the amount of 
 | SEPTEMBER | 0.0087              | 0.0281              | +223.0%                    |
 | ATTACK    | 0.0000              | 0.0049              | NEW                        |
 
-In the table it can be observed that from 2003 and 2010, there has been an increase of the use of these specic words in the documents contributes more, which also indicates that the safte and security in airports has become a lager topic. But it can also be abserved that the "secuirty" term from 2003 only contributed 0.087% but it 2010 it increased to 1.8% which is a substantially increase. But there can be mutiple reasons for this, first of all the number of words that was scrabed from 2003 was only 182 and in 2010 there was 3387 words. This has a huge inpact in what the TF-IDF scores will be, because the proportion of the texts from these two years is far from each other. But none the less there has been an increase airport security detail over the years, but it is not ass noticable as we ennetially thorght, this can also be observed in the word cloud visualization:
-
+It can be observed in the table above that several security-related terms appear with higher TF-IDF scores in 2010 than in 2003. This suggest that security-language became more visuable in the airport texts over time. However, this is not a direct proof that the airport security itself became stricter after 9/11, the major reason for this is because the size difference of the text from 2003 and 2010. The 2003 text only contains 183 words and the 2010 text contains 3387 words which means there is much more room for mentioning security-related words more in deepth and detail. This means these resutls are better understood as an indication that the security is more promenant in the recent years. Because of the security-related words is such a small part of the combined words used in all the texts, they will not be as dominent in the word cloud visualition as expected. 
 ## Word clouds visualization
 
-The figure below shows the word cloud visualization where there has been used a lot of stop words to filter out unwanted words, this was also mentioned earlier.
+The two figures below shows the word cloud visualization with the most frequent used words with in the documents from 2003 and 2010. The bigger the terms are in the word cloud visualitation the more frequent that specific word is.
 
-<img width="647" height="716" alt="billede" src="https://github.com/user-attachments/assets/711eef04-3b91-4375-a1cd-25b184b30b87" />
+<img width="1346" height="717" alt="billede" src="https://github.com/user-attachments/assets/0db016f8-3eec-4bae-8f4d-d2df790c5138" />
+<img width="1318" height="711" alt="billede" src="https://github.com/user-attachments/assets/0e0833af-1b3d-4c68-9eb6-550c6efea110" />
+
+In the two figures it can be observed that the security and safty related words are not dominant at all, but it can be observed that in 2003 one of the frequent terms that got repeated a lot was "crashed". However because word cloud doesn't provide context to the terms is is not possible to determine from the visualitation that the term "chrashed" directly have a correlation to safty such as investigating airplane chrashes to prevent it for happeningn again. 
+
+Similar, for 2010 word cloud contains the frequent terms such as "World War" and "War". But because of the missing context of the use of these specefic terms it is not possible to determine if they have a correlation to safty for the airports, but the terms might reflect military usech of the airports.
 
 
-In the figure it can be observed that there is none to little frequently words that mentions security in airports and airplanes, the closet it comes is in 2010 it can be seen that on of the more frequent words is army which is a type of security it only depends on the context.
+
+
 
 # Discussion
 
