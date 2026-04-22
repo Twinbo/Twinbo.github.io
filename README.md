@@ -13,7 +13,7 @@ The way we will analise the security improvement in the airports is with textuel
 ## Visualization of the graph
 
 # Text analyzes
-Because Wikipedia was lunched in 2001 it was not feasiable to find text documents that the described the security in the airports and for this reason we are analysing some texts from 2003 and compare those with texts from 2010. There was used webscrabing technices to gather all the texts from the weekipidia from 2001 to 2025 with searching for the hearders that contain "airport security". Through the webscrabing there aere already an indication in the different documents with the titel "Aiport Security" becomes lager and larger, this can also be seen in the following table:
+Because Wikipedia was lunched in 2001 it was not feasiable to find text documents that the described the security in the airports and for this reason we are analysing some texts from 2003 and compare those with texts from 2010. There was used webscrabing with weekipidias own API'S for all the airports in the USA to gather all the aviable texts from 2003 to 2025. The table below describes how many words we scrabed through the years from every airprot, it can be observed that the newer the year is the more text was avaible:
 
 | Year | Status | Cleaned Words Found |
 |------|--------|---------------------|
@@ -43,16 +43,16 @@ Because Wikipedia was lunched in 2001 it was not feasiable to find text document
 | 2024 | Found | 4515 |
 | 2025 | Found | 4599 |
 
-But these found words in the documents which has been tokinized, they do not indicate if it is only the airport secruety that is mentioned in the documents. If there are multiple topics with a lot of filler words in the documents with the header "Airport Security" then it will lead for the specific workds ass "airport security, torrerism, war ect.." will become a very small procent of the most frequent words. But even if the documents is only about "Aiport Security" and they don't use those words frquently, then it will be hard to observe any changes over the year. Because of these issues, there was used a lot of different stopper words when making the TF-IDF scores and the words cloud visualizer. Some of the stopper words there was used is such ass "gate, concourse, airlink, pinnacle, ect...". The comparison of the TF-IDF scores from 2003 vs 2010 can be seen in the following table with respect to the target words "security, safety, tsa, screening, september, attack":
+The table above illustrate the number of words gathered from the airports in the USA from weekpidea over the years, but it can be observed that the number of words has been substancually increased over the years and this is a problem for analyzing how the security in the aiprots has become more strict and increased. The reason for this is because the later years contains more secruety-related language which than the sparse early-year pages, this can also be observed in the table bellow that contains the TF-IDF scores. These TF-IDF scores needs to be intepretated cautiosly because of the amount of available text have changed alot over the years which can be absorved in the table above. As mentioned the table below shows the TF-IDF scores of specifc terms that correlated to the securyity in the aiports, the reason for this table is interresting is because the TF-IDF scores messure how important a word is in a giving document, this means it will show an indication of how often a geving word is mentioned in the text from 2003 and 2010.
 
-| Term      | 2003   | 2010   |
-|-----------|--------|--------|
-| SECURITY  | 0.0087 | 0.0180 |
-| SAFETY    | 0.0000 | 0.0221 |
-| TSA       | 0.0000 | 0.0036 |
-| SCREENING | 0.0000 | 0.0054 |
-| SEPTEMBER | 0.0087 | 0.0281 |
-| ATTACK    | 0.0000 | 0.0049 |
+| TERM      | TF-IDF SCORE (2003) | TF-IDF SCORE (2010) | PERCENT CHANGE (2003→2010) |
+|-----------|---------------------|---------------------|----------------------------|
+| SECURITY  | 0.0087              | 0.0180              | +106.9%                    |
+| SAFETY    | 0.0000              | 0.0221              | NEW                        |
+| TSA       | 0.0000              | 0.0036              | NEW                        |
+| SCREENING | 0.0000              | 0.0054              | NEW                        |
+| SEPTEMBER | 0.0087              | 0.0281              | +223.0%                    |
+| ATTACK    | 0.0000              | 0.0049              | NEW                        |
 
 In the table it can be observed that from 2003 and 2010, there has been an increase of the use of these specic words in the documents contributes more, which also indicates that the safte and security in airports has become a lager topic. But it can also be abserved that the "secuirty" term from 2003 only contributed 0.087% but it 2010 it increased to 1.8% which is a substantially increase. But there can be mutiple reasons for this, first of all the number of words that was scrabed from 2003 was only 182 and in 2010 there was 3387 words. This has a huge inpact in what the TF-IDF scores will be, because the proportion of the texts from these two years is far from each other. But none the less there has been an increase airport security detail over the years, but it is not ass noticable as we ennetially thorght, this can also be observed in the word cloud visualization:
 
@@ -60,7 +60,8 @@ In the table it can be observed that from 2003 and 2010, there has been an incre
 
 The figure below shows the word cloud visualization where there has been used a lot of stop words to filter out unwanted words, this was also mentioned earlier.
 
-<img width="813" height="1043" alt="billede" src="https://github.com/user-attachments/assets/9a4d5f95-a47a-4575-8626-95b3ee047334" />
+<img width="647" height="716" alt="billede" src="https://github.com/user-attachments/assets/711eef04-3b91-4375-a1cd-25b184b30b87" />
+
 
 In the figure it can be observed that there is none to little frequently words that mentions security in airports and airplanes, the closet it comes is in 2010 it can be seen that on of the more frequent words is army which is a type of security it only depends on the context.
 
