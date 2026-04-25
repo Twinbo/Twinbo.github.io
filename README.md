@@ -11,37 +11,336 @@ The way we will analise the security improvement in the airports is with textuel
 # Graph analyzes
 Over the years there has been an incresed number of airports and flights going to the different airports in the USA and this is no difference for the period from 1999 - 2003. Even with the the terror attack in 2001 there was mutiple new airports that opened from 2002-2003 and the flights increased aslo substantially. From 1999 - 2000 there was 208 airports and this number incresed to 285 in the period 2002-2003, already here there is an indication that traveling nationally becomes more and more popular one reson the this rising popularity of travelling natianally with plains in the USA is becaouse the also has become much more efficient. In the period from 2002 - 2003 there has been a substantially decrease in the number of delayed flights and canceled flights, while the travel time is much shorter than driving across the states. This can be observed in the two tabels belows that shows the airports network from 1999-2000 and 2002 - 2003: 
 
-| IATA | Region    | Strength | Avg Airtime | Avg Distance | Avg Dep Delay | Avg Arr Delay | Cancelled Origin Count | Diverted Origin Count |
-|------|-----------|----------|-------------|--------------|---------------|---------------|------------------------|-----------------------|
-| ORD  | Midwest   | 1190170  | 116.69      | 1370.14      | 14.56         | 14.24         | 35303                  | 1447                  |
-| ATL  | Southeast | 1058168  | 93.49       | 1068.41      | 11.23         | 8.19          | 16137                  | 1057                  |
-| DFW  | Southwest | 984122   | 122.35      | 1475.36      | 10.69         | 5.85          | 15963                  | 1410                  |
-| LAX  | West      | 807862   | 140.57      | 1818.60      | 11.56         | 10.53         | 13715                  | 755                   |
-| PHX  | Southwest | 733226   | 108.87      | 1332.34      | 13.22         | 10.38         | 7701                   | 681                   |
-| STL  | Midwest   | 690592   | 94.63       | 1068.31      | 10.97         | 7.41          | 7392                   | 789                   |
-| DTW  | Midwest   | 615381   | 92.20       | 1008.31      | 10.95         | 5.13          | 9546                   | 816                   |
-| MSP  | Midwest   | 581397   | 109.05      | 1268.48      | 8.40          | 3.13          | 7808                   | 806                   |
-| DEN  | Mountain  | 546186   | 114.88      | 1435.99      | 12.28         | 10.52         | 6657                   | 641                   |
-| SFO  | West      | 544031   | 146.24      | 1912.95      | 13.61         | 15.80         | 12387                  | 621                   |
+<table>
+  <tr>
+    <th colspan="9" align="center">Time period: 1999–2000</th>
+  </tr>
+  <tr>
+    <th>IATA</th>
+    <th>Region</th>
+    <th>Strength</th>
+    <th>Avg Airtime</th>
+    <th>Avg Distance</th>
+    <th>Avg Dep Delay</th>
+    <th>Avg Arr Delay</th>
+    <th>Cancelled Origin Count</th>
+    <th>Diverted Origin Count</th>
+  </tr>
+  <tr>
+    <td>ORD</td>
+    <td>Midwest</td>
+    <td>1190170</td>
+    <td>116.69</td>
+    <td>1370.14</td>
+    <td>14.56</td>
+    <td>14.24</td>
+    <td>35303</td>
+    <td>1447</td>
+  </tr>
+  <tr>
+    <td>ATL</td>
+    <td>Southeast</td>
+    <td>1058168</td>
+    <td>93.49</td>
+    <td>1068.41</td>
+    <td>11.23</td>
+    <td>8.19</td>
+    <td>16137</td>
+    <td>1057</td>
+  </tr>
+  <tr>
+    <td>DFW</td>
+    <td>Southwest</td>
+    <td>984122</td>
+    <td>122.35</td>
+    <td>1475.36</td>
+    <td>10.69</td>
+    <td>5.85</td>
+    <td>15963</td>
+    <td>1410</td>
+  </tr>
+  <tr>
+    <td>LAX</td>
+    <td>West</td>
+    <td>807862</td>
+    <td>140.57</td>
+    <td>1818.60</td>
+    <td>11.56</td>
+    <td>10.53</td>
+    <td>13715</td>
+    <td>755</td>
+  </tr>
+  <tr>
+    <td>PHX</td>
+    <td>Southwest</td>
+    <td>733226</td>
+    <td>108.87</td>
+    <td>1332.34</td>
+    <td>13.22</td>
+    <td>10.38</td>
+    <td>7701</td>
+    <td>681</td>
+  </tr>
+  <tr>
+    <td>STL</td>
+    <td>Midwest</td>
+    <td>690592</td>
+    <td>94.63</td>
+    <td>1068.31</td>
+    <td>10.97</td>
+    <td>7.41</td>
+    <td>7392</td>
+    <td>789</td>
+  </tr>
+  <tr>
+    <td>DTW</td>
+    <td>Midwest</td>
+    <td>615381</td>
+    <td>92.20</td>
+    <td>1008.31</td>
+    <td>10.95</td>
+    <td>5.13</td>
+    <td>9546</td>
+    <td>816</td>
+  </tr>
+  <tr>
+    <td>MSP</td>
+    <td>Midwest</td>
+    <td>581397</td>
+    <td>109.05</td>
+    <td>1268.48</td>
+    <td>8.40</td>
+    <td>3.13</td>
+    <td>7808</td>
+    <td>806</td>
+  </tr>
+  <tr>
+    <td>DEN</td>
+    <td>Mountain</td>
+    <td>546186</td>
+    <td>114.88</td>
+    <td>1435.99</td>
+    <td>12.28</td>
+    <td>10.52</td>
+    <td>6657</td>
+    <td>641</td>
+  </tr>
+  <tr>
+    <td>SFO</td>
+    <td>West</td>
+    <td>544031</td>
+    <td>146.24</td>
+    <td>1912.95</td>
+    <td>13.61</td>
+    <td>15.80</td>
+    <td>12387</td>
+    <td>621</td>
+  </tr>
+</table>
 
-| IATA | Region    | Strength | Avg Airtime | Avg Distance | Avg Dep Delay | Avg Arr Delay | Cancelled Origin Count | Diverted Origin Count |
-|------|-----------|----------|-------------|--------------|---------------|---------------|------------------------|-----------------------|
-| ORD  | Midwest   | 1388214  | 105.26      | 1216.27      | 7.84          | 5.53          | 15285                  | 1104                  |
-| DFW  | Southwest | 1228058  | 108.28      | 1235.17      | 5.61          | 1.01          | 8413                   | 884                   |
-| ATL  | Southeast | 1201228  | 84.20       | 1029.34      | 7.90          | 5.82          | 6794                   | 950                   |
-| LAX  | West      | 812923   | 131.84      | 1617.66      | 4.29          | 0.75          | 4480                   | 510                   |
-| PHX  | Southwest | 687674   | 118.53      | 1453.29      | 6.93          | 1.57          | 3444                   | 569                   |
-| IAH  | Southwest | 609715   | 113.04      | 1347.36      | 3.25          | 2.37          | 1801                   | 353                   |
-| MSP  | Midwest   | 572741   | 112.53      | 1310.30      | 4.31          | 0.91          | 3469                   | 488                   |
-| DTW  | Midwest   | 561032   | 92.66       | 1006.10      | 6.76          | 1.17          | 4261                   | 502                   |
-| LAS  | West      | 547541   | 113.76      | 1409.50      | 6.89          | 3.65          | 1880                   | 480                   |
-| DEN  | Mountain  | 524394   | 125.50      | 1415.76      | 4.34          | 1.35          | 2417                   | 386                   |
+<table>
+  <tr>
+    <th colspan="9" align="center">Time period: 2002–2003</th>
+  </tr>
+  <tr>
+    <th>IATA</th>
+    <th>Region</th>
+    <th>Strength</th>
+    <th>Avg Airtime</th>
+    <th>Avg Distance</th>
+    <th>Avg Dep Delay</th>
+    <th>Avg Arr Delay</th>
+    <th>Cancelled Origin Count</th>
+    <th>Diverted Origin Count</th>
+  </tr>
+  <tr>
+    <td>ORD</td>
+    <td>Midwest</td>
+    <td>1388214</td>
+    <td>105.26</td>
+    <td>1216.27</td>
+    <td>7.84</td>
+    <td>5.53</td>
+    <td>15285</td>
+    <td>1104</td>
+  </tr>
+  <tr>
+    <td>DFW</td>
+    <td>Southwest</td>
+    <td>1228058</td>
+    <td>108.28</td>
+    <td>1235.17</td>
+    <td>5.61</td>
+    <td>1.01</td>
+    <td>8413</td>
+    <td>884</td>
+  </tr>
+  <tr>
+    <td>ATL</td>
+    <td>Southeast</td>
+    <td>1201228</td>
+    <td>84.20</td>
+    <td>1029.34</td>
+    <td>7.90</td>
+    <td>5.82</td>
+    <td>6794</td>
+    <td>950</td>
+  </tr>
+  <tr>
+    <td>LAX</td>
+    <td>West</td>
+    <td>812923</td>
+    <td>131.84</td>
+    <td>1617.66</td>
+    <td>4.29</td>
+    <td>0.75</td>
+    <td>4480</td>
+    <td>510</td>
+  </tr>
+  <tr>
+    <td>PHX</td>
+    <td>Southwest</td>
+    <td>687674</td>
+    <td>118.53</td>
+    <td>1453.29</td>
+    <td>6.93</td>
+    <td>1.57</td>
+    <td>3444</td>
+    <td>569</td>
+  </tr>
+  <tr>
+    <td>IAH</td>
+    <td>Southwest</td>
+    <td>609715</td>
+    <td>113.04</td>
+    <td>1347.36</td>
+    <td>3.25</td>
+    <td>2.37</td>
+    <td>1801</td>
+    <td>353</td>
+  </tr>
+  <tr>
+    <td>MSP</td>
+    <td>Midwest</td>
+    <td>572741</td>
+    <td>112.53</td>
+    <td>1310.30</td>
+    <td>4.31</td>
+    <td>0.91</td>
+    <td>3469</td>
+    <td>488</td>
+  </tr>
+  <tr>
+    <td>DTW</td>
+    <td>Midwest</td>
+    <td>561032</td>
+    <td>92.66</td>
+    <td>1006.10</td>
+    <td>6.76</td>
+    <td>1.17</td>
+    <td>4261</td>
+    <td>502</td>
+  </tr>
+  <tr>
+    <td>LAS</td>
+    <td>West</td>
+    <td>547541</td>
+    <td>113.76</td>
+    <td>1409.50</td>
+    <td>6.89</td>
+    <td>3.65</td>
+    <td>1880</td>
+    <td>480</td>
+  </tr>
+  <tr>
+    <td>DEN</td>
+    <td>Mountain</td>
+    <td>524394</td>
+    <td>125.50</td>
+    <td>1415.76</td>
+    <td>4.34</td>
+    <td>1.35</td>
+    <td>2417</td>
+    <td>386</td>
+  </tr>
+</table>
 
-The two tabels shows the top 10 most visited airports in the USA, where "IATA" is the International Air Transport Association codes that is used to identify the different airports, "Strength" is the number of flights that visited that giving airport in the period, "Avg Airtime, "Avg Distance", "Avg Dep Delay" and "Avg Arr Delay" are all messured in hours. 
+The two tabels shows the top 10 most visited airports in the USA, where "IATA" is the International Air Transport Association codes that is used to identify the different airports, "Strength" is the number of flights that visited that giving airport in the period, "Avg Airtime, "Avg Dep Delay" and "Avg Arr Delay" are all messured in hours, "Avg Distance" is messured in miles. Because of the top 10 most visitet airports have changed between the two time periods, there will only be compared directely the changes on the 8 commaen airports to observe more clrearly what have changed, this comparison table can be seen below:
 
+<table>
+  <tr>
+    <th colspan="6" align="center">Change from 1999–2000 to 2002–2003</th>
+  </tr>
+  <tr>
+    <th>Compared Airports</th>
+    <th>Category</th>
+    <th>1999–2000</th>
+    <th>2002–2003</th>
+    <th>Change</th>
+    <th>Interpretation</th>
+  </tr>
+  <tr>
+    <td rowspan="7">ORD, DFW, ATL, LAX, PHX, MSP, DTW, DEN</td>
+    <td><b>Strength</b></td>
+    <td>6,516,512</td>
+    <td>6,976,264</td>
+    <td>+459,752 (+7.06%)</td>
+    <td>More flights in 2002–2003 ↑</td>
+  </tr>
+  <tr>
+    <td><b>Avg Airtime</b></td>
+    <td>112.26</td>
+    <td>109.85</td>
+    <td>-2.41 (-2.15%)</td>
+    <td>Slight decrease ↓</td>
+  </tr>
+  <tr>
+    <td><b>Avg Distance</b></td>
+    <td>1347.20</td>
+    <td>1285.49</td>
+    <td>-61.72 (-4.58%)</td>
+    <td>Slight decrease ↓</td>
+  </tr>
+  <tr>
+    <td><b>Avg Dep Delay</b></td>
+    <td>11.61</td>
+    <td>6.00</td>
+    <td>-5.61 (-48.35%)</td>
+    <td>Departure delays decreased a lot ↓</td>
+  </tr>
+  <tr>
+    <td><b>Avg Arr Delay</b></td>
+    <td>8.50</td>
+    <td>2.26</td>
+    <td>-6.23 (-73.36%)</td>
+    <td>Arrival delays decreased strongly ↓</td>
+  </tr>
+  <tr>
+    <td><b>Cancelled Origin Count</b></td>
+    <td>112,830</td>
+    <td>48,563</td>
+    <td>-64,267 (-56.96%)</td>
+    <td>Far fewer cancellations ↓</td>
+  </tr>
+  <tr>
+    <td><b>Diverted Origin Count</b></td>
+    <td>7,613</td>
+    <td>5,393</td>
+    <td>-2,220 (-29.16%)</td>
+    <td>Fewer diversions ↓</td>
+  </tr>
+</table>
 
-
+It can be observed that there have been a supstantially development in number of flight from the two time periods but not only the number of flights have increased supstantially, the overall effecenty has been supstantially improved also over time. Not only that the flight time has decreesed and the same for the overall distanced travlled which indicates that there has become a shift on how people chooses to fly, they are more likely to travel shorter distences with flights in the period from 2002-2003 than in 1999-2000. The overall uncertanty with delay and cancelations have decreased supstantally in 2002-2003 compared to 1999-2000 which makes the industry more trustworthy and makes the costumers more sastified. This also shows that even when traggick incidents happens such as a terror attack, it doens't stop the ever growing dewlopment and improvement with tvavelling with planes and it didn't lead to fewer flights avaible but instead there has become more. This development of flights can also be seen in the graphs visualatations.
 ## Visualization of the graph
+
+The two graph visualitations from 1999-2000 and 2002-2003 is shown as a headmap wher the warmer the cennections two the nodes which is the airports, the more flights was traveling to that designatad airport. The colour of the nodes shows the graphical communites of the airports, so the airports that is located in the same regian will have the same colour to show they are one community.
+
+<img width="4245" height="3594" alt="billede" src="https://github.com/user-attachments/assets/98bf377d-4a32-4f08-ab35-c1338c2fe1dc" />
+
+<img width="4245" height="3594" alt="billede" src="https://github.com/user-attachments/assets/987338ec-e62c-49da-aabf-463a3fa7948a" />
+
+
 
 # Text analyzes
 Because Wikipedia was lunched in 2001 it was not feasiable to find text documents that the described the security in the airports and for this reason we are analysing some texts from 2003 and compare those with texts from 2010. There was used webscrabing with weekipidias own API'S for all the airports in the USA to gather all the aviable texts from 2003 to 2025. The table below describes how many words we scrabed through the years from every airprot, it can be observed that the newer the year is the more text was avaible:
