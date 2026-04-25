@@ -9,6 +9,37 @@ To analise the change of airport traffic before and after 9/11 we will make a gr
 The way we will analise the security improvement in the airports is with textuel analyse and here we are going to webscrabe relevent texts on weekipidia where we will gather all the scrabed texts into documents. With all the text in the documents we can start on tokenizing the words so it will be possible for us to find the most frequent used words. When all this is done we will visualised all the most frequent used words that was found with TF-IDF and visualize them with using word clouds.
 
 # Graph analyzes
+Over the years there has been an incresed number of airports and flights going to the different airports in the USA and this is no difference for the period from 1999 - 2003. Even with the the terror attack in 2001 there was mutiple new airports that opened from 2002-2003 and the flights increased aslo substantially. From 1999 - 2000 there was 208 airports and this number incresed to 285 in the period 2002-2003, already here there is an indication that traveling nationally becomes more and more popular one reson the this rising popularity of travelling natianally with plains in the USA is becaouse the also has become much more efficient. In the period from 2002 - 2003 there has been a substantially decrease in the number of delayed flights and canceled flights, while the travel time is much shorter than driving across the states. This can be observed in the two tabels belows that shows the airports network from 1999-2000 and 2002 - 2003: 
+
+| IATA | Region    | Strength | Avg Airtime | Avg Distance | Avg Dep Delay | Avg Arr Delay | Cancelled Origin Count | Diverted Origin Count |
+|------|-----------|----------|-------------|--------------|---------------|---------------|------------------------|-----------------------|
+| ORD  | Midwest   | 1190170  | 116.69      | 1370.14      | 14.56         | 14.24         | 35303                  | 1447                  |
+| ATL  | Southeast | 1058168  | 93.49       | 1068.41      | 11.23         | 8.19          | 16137                  | 1057                  |
+| DFW  | Southwest | 984122   | 122.35      | 1475.36      | 10.69         | 5.85          | 15963                  | 1410                  |
+| LAX  | West      | 807862   | 140.57      | 1818.60      | 11.56         | 10.53         | 13715                  | 755                   |
+| PHX  | Southwest | 733226   | 108.87      | 1332.34      | 13.22         | 10.38         | 7701                   | 681                   |
+| STL  | Midwest   | 690592   | 94.63       | 1068.31      | 10.97         | 7.41          | 7392                   | 789                   |
+| DTW  | Midwest   | 615381   | 92.20       | 1008.31      | 10.95         | 5.13          | 9546                   | 816                   |
+| MSP  | Midwest   | 581397   | 109.05      | 1268.48      | 8.40          | 3.13          | 7808                   | 806                   |
+| DEN  | Mountain  | 546186   | 114.88      | 1435.99      | 12.28         | 10.52         | 6657                   | 641                   |
+| SFO  | West      | 544031   | 146.24      | 1912.95      | 13.61         | 15.80         | 12387                  | 621                   |
+
+| IATA | Region    | Strength | Avg Airtime | Avg Distance | Avg Dep Delay | Avg Arr Delay | Cancelled Origin Count | Diverted Origin Count |
+|------|-----------|----------|-------------|--------------|---------------|---------------|------------------------|-----------------------|
+| ORD  | Midwest   | 1388214  | 105.26      | 1216.27      | 7.84          | 5.53          | 15285                  | 1104                  |
+| DFW  | Southwest | 1228058  | 108.28      | 1235.17      | 5.61          | 1.01          | 8413                   | 884                   |
+| ATL  | Southeast | 1201228  | 84.20       | 1029.34      | 7.90          | 5.82          | 6794                   | 950                   |
+| LAX  | West      | 812923   | 131.84      | 1617.66      | 4.29          | 0.75          | 4480                   | 510                   |
+| PHX  | Southwest | 687674   | 118.53      | 1453.29      | 6.93          | 1.57          | 3444                   | 569                   |
+| IAH  | Southwest | 609715   | 113.04      | 1347.36      | 3.25          | 2.37          | 1801                   | 353                   |
+| MSP  | Midwest   | 572741   | 112.53      | 1310.30      | 4.31          | 0.91          | 3469                   | 488                   |
+| DTW  | Midwest   | 561032   | 92.66       | 1006.10      | 6.76          | 1.17          | 4261                   | 502                   |
+| LAS  | West      | 547541   | 113.76      | 1409.50      | 6.89          | 3.65          | 1880                   | 480                   |
+| DEN  | Mountain  | 524394   | 125.50      | 1415.76      | 4.34          | 1.35          | 2417                   | 386                   |
+
+The two tabels shows the top 10 most visited airports in the USA, where "IATA" is the International Air Transport Association codes that is used to identify the different airports, "Strength" is the number of flights that visited that giving airport in the period, "Avg Airtime, "Avg Distance", "Avg Dep Delay" and "Avg Arr Delay" are all messured in hours. 
+
+
 
 ## Visualization of the graph
 
