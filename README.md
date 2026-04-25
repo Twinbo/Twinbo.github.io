@@ -332,15 +332,17 @@ The two tabels shows the top 10 most visited airports in the USA, where "IATA" i
 </table>
 
 It can be observed that there have been a supstantially development in number of flight from the two time periods but not only the number of flights have increased supstantially, the overall effecenty has been supstantially improved also over time. Not only that the flight time has decreesed and the same for the overall distanced travlled which indicates that there has become a shift on how people chooses to fly, they are more likely to travel shorter distences with flights in the period from 2002-2003 than in 1999-2000. The overall uncertanty with delay and cancelations have decreased supstantally in 2002-2003 compared to 1999-2000 which makes the industry more trustworthy and makes the costumers more sastified. This also shows that even when traggick incidents happens such as a terror attack, it doens't stop the ever growing dewlopment and improvement with tvavelling with planes and it didn't lead to fewer flights avaible but instead there has become more. This development of flights can also be seen in the graphs visualatations.
+
 ## Visualization of the graph
 
-The two graph visualitations from 1999-2000 and 2002-2003 is shown as a headmap wher the warmer the cennections two the nodes which is the airports, the more flights was traveling to that designatad airport. The colour of the nodes shows the graphical communites of the airports, so the airports that is located in the same regian will have the same colour to show they are one community.
+The two graph visualitations from 1999-2000 and 2002-2003 is shown as a headmap wher the warmer the cennections too the nodes which is the airports, the more flights travelled to that designatad airport. The IATA codes of the most 10 visited airports are also shown on the nodes, this makes it also possible to see which communities the 10 most visted airports belongs to. 
+The colour of the nodes shows the graphical communites of the airports, so the airports that is located in the same regian will have the same colour to show they are one community.
 
-<img width="4245" height="3594" alt="billede" src="https://github.com/user-attachments/assets/98bf377d-4a32-4f08-ab35-c1338c2fe1dc" />
+<img width="4245" height="3594" alt="billede" src="https://github.com/user-attachments/assets/98bf377d-4a32-4f08-ab35-c1338c2fe1dc" /> 
 
 <img width="4245" height="3594" alt="billede" src="https://github.com/user-attachments/assets/987338ec-e62c-49da-aabf-463a3fa7948a" />
 
-
+Between the two grapth there can be observed that a lot have changed in the way people travels, first of all from 1999-2000 it can be seen the most travelled airports are more spread out than from 2002-2003 where the most traveled airports are more centrulized, but ther can also be seen that there have been an increase of nodes which mean that there have been established more airports around the communities and this is because of the general higher demand of travelling via planes. 
 
 # Text analyzes
 Because Wikipedia was lunched in 2001 it was not feasiable to find text documents that the described the security in the airports and for this reason we are analysing some texts from 2003 and compare those with texts from 2010. There was used webscrabing with weekipidias own API'S for all the airports in the USA to gather all the aviable texts from 2003 to 2025. The table below describes how many words we scrabed through the years from every airprot, it can be observed that the newer the year is the more text was avaible:
