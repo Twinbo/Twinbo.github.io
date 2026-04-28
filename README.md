@@ -331,7 +331,11 @@ The two tabels shows the top 10 most visited airports in the USA, where "IATA" i
   </tr>
 </table>
 
-It can be observed that there have been a supstantially development in number of flight from the two time periods but not only the number of flights have increased supstantially, the overall effecenty has been supstantially improved also over time. Not only that the flight time has decreesed and the same for the overall distanced travlled which indicates that there has become a shift on how people chooses to fly, they are more likely to travel shorter distences with flights in the period from 2002-2003 than in 1999-2000. The overall uncertanty with delay and cancelations have decreased supstantally in 2002-2003 compared to 1999-2000 which makes the industry more trustworthy and makes the costumers more sastified. This also shows that even when traggick incidents happens such as a terror attack, it doens't stop the ever growing dewlopment and improvement with tvavelling with planes and it didn't lead to fewer flights avaible but instead there has become more. This development of flights can also be seen in the graphs visualatations.
+It can be observed that there have been a supstantially development in number of flight from the two time periods but not only the number of flights have increased supstantially, the overall effecenty has been supstantially improved also over time. Not only that the flight time has decreesed and the same for the overall distanced travlled which indicates that there has become a shift on how people chooses to fly, they are more likely to travel shorter distences with flights in the period from 2002-2003 than in 1999-2000. The overall uncertanty with delay and cancelations have decreased supstantally in 2002-2003 compared to 1999-2000 which makes the industry more trustworthy and makes the costumers more sastified. This also shows that even when traggick incidents happens such as a terror attack, it doens't stop the ever growing dewlopment and improvement with tvavelling with planes and it didn't lead to fewer flights avaible but instead there has become more. This development of flights can also be seen in the graph below.
+
+<img width="1380" height="525" alt="billede" src="https://github.com/user-attachments/assets/4cb57922-5db5-4294-a0ae-b5c5a7a78fdc" />
+
+
 
 ## Visualization of the graph
 
