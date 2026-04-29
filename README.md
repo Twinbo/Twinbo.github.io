@@ -347,9 +347,9 @@ In the graph at can be observed that the number of flights drops with nerly halv
 The two graph visualitations from 1999-2000 and 2002-2003 is shown as a headmap wher the warmer the cennections too the nodes which is the airports, the more flights travelled to that designatad airport. The IATA codes of the most 10 visited airports are also shown on the nodes, this makes it also possible to see which communities the 10 most visted airports belongs to. 
 The colour of the nodes shows the graphical communites of the airports, so the airports that is located in the same regian will have the same colour to show they are one community.
 
-<img width="4245" height="3594" alt="billede" src="https://github.com/user-attachments/assets/98bf377d-4a32-4f08-ab35-c1338c2fe1dc" /> 
+<img width="900" alt="billede" src="https://github.com/user-attachments/assets/98bf377d-4a32-4f08-ab35-c1338c2fe1dc" /> 
 
-<img width="4245" height="3594" alt="billede" src="https://github.com/user-attachments/assets/987338ec-e62c-49da-aabf-463a3fa7948a" />
+<img width="900" alt="billede" src="https://github.com/user-attachments/assets/987338ec-e62c-49da-aabf-463a3fa7948a" />
 
 Between the two grapth there can be observed that a lot have changed in the way people travels, first of all from 1999-2000 it can be seen the most travelled airports are more spread out than from 2002-2003 where the most traveled airports are more centrulized, but ther can also be seen that there have been an increase of nodes which mean that there have been established more airports around the communities and this is because of the general higher demand of travelling via planes. 
 
