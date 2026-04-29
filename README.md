@@ -1,11 +1,3 @@
-<style>
-  .container {
-    max-width: 1400px;
-    margin: auto;
-  }
-</style>
-
-<div class="container">
 
 # How did the airport traffic and security evolve after the terror incedint on the 11/09-2001 also known as (9/11) in the United Stated of America?
 
@@ -344,7 +336,7 @@ The comparison shows that the 8 comman major airports had more flights in 2002-2
 
 This suggests that, for these selceted major airports, operational performance was better in 2002-2003 than in 1999-2000. Howecer, these results can not be intepreted as evidence that the entire aviation system has become more efficient. THe reason for this is because if the avaitation traffic is look upon a longer period from 1988-2007 it can be observed that there is an increase of canceled flights and general flights. This is demonstrated in the graph below:
 
-<img width="2085" height="889" alt="billede" src="https://github.com/user-attachments/assets/08299700-7a7a-41e4-8453-fe46a3dd7621" />
+<img width="900" alt="billede" src="https://github.com/user-attachments/assets/08299700-7a7a-41e4-8453-fe46a3dd7621" />
 
 
 In the graph at can be observed that the number of flights drops with nerly halv a million flights which is an extrordinory drop and it is consistent with the aviation disruption after 9/11. The year after in 2003 it can be observed that the avaition traffic returns to normal and starts to climb again. In the graph it can also be observed that a tromendunce amount of flights around 250k got cancelled when 9/11 happened, this was also done for security messures, but when the aviation oppened up again in 2002 the number of cancled flights dropped a lot and ever since it has been climbing. So even though the change table showed a decreassed in canceled flights the over all tendency of the cancelations is increasing and climbing to oversee the peak of canceled flights before 9/11. This hows the improvement observed in the selsected-airport comparison was not permanent across the full time period.  
@@ -410,8 +402,8 @@ It can be observed in the table above that several security-related terms appear
 
 The two figures below shows the word cloud visualization with the most frequent used words with in the documents from 2003 and 2010. The bigger the terms are in the word cloud visualitation the more frequent that specific word is.
 
-<img width="1346" height="717" alt="billede" src="https://github.com/user-attachments/assets/0db016f8-3eec-4bae-8f4d-d2df790c5138" />
-<img width="1318" height="711" alt="billede" src="https://github.com/user-attachments/assets/0e0833af-1b3d-4c68-9eb6-550c6efea110" />
+<img width="900" alt="billede" src="https://github.com/user-attachments/assets/0db016f8-3eec-4bae-8f4d-d2df790c5138" />
+<img width="900" alt="billede" src="https://github.com/user-attachments/assets/0e0833af-1b3d-4c68-9eb6-550c6efea110" />
 
 In the two figures it can be observed that the security and safty related words are not dominant at all, but it can be observed that in 2003 one of the frequent terms that got repeated a lot was "crashed". However because word cloud doesn't provide context to the terms is is not possible to determine from the visualitation that the term "chrashed" directly have a correlation to safty such as investigating airplane chrashes to prevent it for happeningn again. 
 
@@ -424,5 +416,3 @@ Similar, for 2010 word cloud contains the frequent terms such as "World War" and
 # Discussion
 
 # Konlusion
-
-</div>
