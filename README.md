@@ -265,7 +265,7 @@ Over the years there has been an incresed number of airports and flights going t
   </tr>
 </table>
 
-The two tabels shows the top 10 most visited airports in the USA, where "IATA" is the International Air Transport Association codes that is used to identify the different airports, "Strength" is the number of flights that visited that giving airport in the period, "Avg Airtime, "Avg Dep Delay" and "Avg Arr Delay" are all messured in hours, "Avg Distance" is messured in miles. Because of the top 10 most visitet airports have changed between the two time periods, there will only be compared directely the changes on the 8 commaen airports to observe more clrearly what have changed, this comparison table can be seen below:
+The two tabels shows the top 10 most visited airports in the USA, where "IATA" is the International Air Transport Association codes that is used to identify the different airports, "Strength" is the number of flights that visited that giving airport in the period, "Avg Airtime, "Avg Dep Delay" and "Avg Arr Delay" are all messured in minutes, "Avg Distance" is messured in kilometers (km). Because the top 10 most visitet airports are not axactly the same in the two time periods, the direct comparison only includes the 8 airports that appear in both top-10 lists. This means the comparison of major recurring hubs, but not as a comparison of the entire US domestic airport system. 
 
 <table>
   <tr>
@@ -331,10 +331,14 @@ The two tabels shows the top 10 most visited airports in the USA, where "IATA" i
   </tr>
 </table>
 
-It can be observed that there have been a supstantially development in number of flight from the two time periods but not only the number of flights have increased supstantially, the overall effecenty has been supstantially improved also over time. Not only that the flight time has decreesed and the same for the overall distanced travlled which indicates that there has become a shift on how people chooses to fly, they are more likely to travel shorter distences with flights in the period from 2002-2003 than in 1999-2000. The overall uncertanty with delay and cancelations have decreased supstantally in 2002-2003 compared to 1999-2000 which makes the industry more trustworthy and makes the costumers more sastified. This also shows that even when traggick incidents happens such as a terror attack, it doens't stop the ever growing dewlopment and improvement with tvavelling with planes and it didn't lead to fewer flights avaible but instead there has become more. This development of flights can also be seen in the graph below.
+The comparison shows that the 8 comman major airports had more flights in 2002-2003 than in 1999-2000, but their combined strength increased with 7% which corresponds to an increase with 459,752 flights. At the same time it can be seen seen that the average depature delay, average arrival delay, cancelled origin count and dicerted origin count all decreased. 
 
-<img width="1380" height="525" alt="billede" src="https://github.com/user-attachments/assets/4cb57922-5db5-4294-a0ae-b5c5a7a78fdc" />
+This suggests that, for these selceted major airports, operational performance was better in 2002-2003 than in 1999-2000. Howecer, these results can not be intepreted as evidence that the entire aviation system has become more efficient. THe reason for this is because if the avaitation traffic is look upon a longer period from 1988-2007 it can be observed that there is an increase of canceled flights and general flights. This is demonstrated in the graph below:
 
+<img width="2085" height="889" alt="billede" src="https://github.com/user-attachments/assets/08299700-7a7a-41e4-8453-fe46a3dd7621" />
+
+
+In the graph at can be observed that the number of flights drops with nerly halv a million flights which is an extrordinory drop and it is consistent with the aviation disruption after 9/11. The year after in 2003 it can be observed that the avaition traffic returns to normal and starts to climb again. In the graph it can also be observed that a tromendunce amount of flights around 250k got cancelled when 9/11 happened, this was also done for security messures, but when the aviation oppened up again in 2002 the number of cancled flights dropped a lot and ever since it has been climbing. So even though the change table showed a decreassed in canceled flights the over all tendency of the cancelations is increasing and climbing to oversee the peak of canceled flights before 9/11. This hows the improvement observed in the selsected-airport comparison was not permanent across the full time period.  
 
 
 ## Visualization of the graph
