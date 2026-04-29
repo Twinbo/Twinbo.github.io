@@ -1,3 +1,12 @@
+<style>
+  .container {
+    max-width: 1400px;
+    margin: auto;
+  }
+</style>
+
+<div class="container">
+
 # How did the airport traffic and security evolve after the terror incedint on the 11/09-2001 also known as (9/11) in the United Stated of America?
 
 This project explores how the airport traffic look a few years before 9/11 and then compares to how it look a couple years later, this an interresting comparison because over the few decades, the security in airports has been substantially increased but the amount of people who are travelling on plane also have been substially increse. It is expected that there can be observed a substatially more media covered text on the secruity in the airports after 9/11 and fewer flights the year later but in the later years it is expected that the traffic has increased substantially than it was before 9/11 but still with increasing secruity in the airports.
@@ -415,3 +424,5 @@ Similar, for 2010 word cloud contains the frequent terms such as "World War" and
 # Discussion
 
 # Konlusion
+
+</div>
