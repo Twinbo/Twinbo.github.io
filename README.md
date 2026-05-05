@@ -12,7 +12,7 @@ The way we will analise the security improvement in the airports is with textuel
 # Graph analyzes
 Over the years there has been an incresed number of airports and flights going to the different airports in the USA and this is no difference for the period from 1999-2003. Even with the the terror attack in 2001 there was mutiple new airports that appered from 2002-2003 and the flights increased aslo substantially. From 1999-2000 there was 208 airports and this number incresed to 285 in the period 2002-2003. There is a substantially decrease in the number of delayed flights and cancled flights in the period from 2002-2003 then from 1999-2000. The overall distance also changed between these two time periods, in the period from 1999-2000 the average distance was longer than the average distance from 2002-2003. This can be observed in the two tabels belows that shows the airports network from 1999-2000 and 2002 - 2003: 
 
-<table>
+<!-- <table>
   <tr>
     <th colspan="9" align="center">Time period: 1999–2000</th>
   </tr>
@@ -139,7 +139,7 @@ Over the years there has been an incresed number of airports and flights going t
   </tr>
 </table>
 
-<table>
+ <table>
   <tr>
     <th colspan="9" align="center">Time period: 2002–2003</th>
   </tr>
@@ -264,11 +264,11 @@ Over the years there has been an incresed number of airports and flights going t
     <td>2417</td>
     <td>386</td>
   </tr>
-</table>
+</table>  -->
 
 The two tabels shows the top 10 most visited airports in the USA, where "IATA" is the International Air Transport Association codes that is used to identify the different airports, "Strength" is the number of flights that visited that giving airport in the period, "Avg Airtime, "Avg Dep Delay" and "Avg Arr Delay" are all messured in minutes, "Avg Distance" is messured in kilometers (km). Because the top 10 most visitet airports are not axactly the same in the two time periods, the direct comparison only includes the 8 airports that appear in both top-10 lists. This means the comparison of major recurring hubs, but not as a comparison of the entire US domestic airport system. 
 
-<table>
+<!-- <table>
   <tr>
     <th colspan="6" align="center">Change from 1999–2000 to 2002–2003</th>
   </tr>
@@ -330,6 +330,77 @@ The two tabels shows the top 10 most visited airports in the USA, where "IATA" i
     <td>-2,220 (-29.16%)</td>
     <td>Fewer diversions ↓</td>
   </tr>
+</table> -->
+
+<table>
+  <tr>
+    <th colspan="6" align="center">Change from 2001 Aug to 2001 Sep</th>
+  </tr>
+  <tr>
+    <th>Compared Airports</th>
+    <th>Category</th>
+    <th>2001 Aug</th>
+    <th>2001 Sep</th>
+    <th>Change</th>
+    <th>Interpretation</th>
+  </tr>
+
+  <tr>
+    <td rowspan="7">All airports appearing in both periods</td>
+    <td><b>Total Flights</b></td>
+    <td>544,335</td>
+    <td>490,698</td>
+    <td>-53,637 (-9.85%)</td>
+    <td>Fewer total flights in Sep ↓</td>
+  </tr>
+
+  <tr>
+    <td><b>Avg Airtime</b></td>
+    <td>72.48</td>
+    <td>71.28</td>
+    <td>-1.20 (-1.66%)</td>
+    <td>Slight decrease ↓</td>
+  </tr>
+
+  <tr>
+    <td><b>Avg Distance</b></td>
+    <td>752.21</td>
+    <td>741.35</td>
+    <td>-10.86 (-1.44%)</td>
+    <td>Slight decrease ↓</td>
+  </tr>
+
+  <tr>
+    <td><b>Avg Dep Delay</b></td>
+    <td>6.96</td>
+    <td>4.64</td>
+    <td>-2.31 (-33.27%)</td>
+    <td>Departure delays decreased a lot ↓</td>
+  </tr>
+
+  <tr>
+    <td><b>Avg Arr Delay</b></td>
+    <td>8.93</td>
+    <td>3.27</td>
+    <td>-5.66 (-63.39%)</td>
+    <td>Arrival delays decreased strongly ↓</td>
+  </tr>
+
+  <tr>
+    <td><b>Cancelled Origin Count</b></td>
+    <td>13,318</td>
+    <td>99,324</td>
+    <td>+86,006 (+645.79%)</td>
+    <td>Far more cancellations ↑</td>
+  </tr>
+
+  <tr>
+    <td><b>Diverted Origin Count</b></td>
+    <td>1,574</td>
+    <td>1,386</td>
+    <td>-188 (-11.94%)</td>
+    <td>Fewer diversions ↓</td>
+  </tr>
 </table>
 
 The comparison shows that the 8 comman major airports had more flights in 2002-2003 than in 1999-2000, but their combined strength increased with 7% which corresponds to an increase with 459,752 flights. At the same time it can be seen seen that the average depature delay, average arrival delay, cancelled origin count and dicerted origin count all decreased. 
@@ -337,6 +408,9 @@ The comparison shows that the 8 comman major airports had more flights in 2002-2
 This suggests that, for these selceted major airports, operational performance was better in 2002-2003 than in 1999-2000. Howecer, these results can not be intepreted as evidence that the entire aviation system has become more efficient. THe reason for this is because if the avaitation traffic is look upon a longer period from 1988-2007 it can be observed that there is an increase of canceled flights and general flights. This is demonstrated in the graph below:
 
 <img width="900" alt="billede" src="https://github.com/user-attachments/assets/08299700-7a7a-41e4-8453-fe46a3dd7621" />
+
+<img width="1799" height="650" alt="image" src="https://github.com/user-attachments/assets/379e2b7b-917b-4b00-8017-099e1269f7d1" />
+
 
 
 In the graph at can be observed that the number of flights drops with nerly halv a million flights which is an extrordinory drop and it is consistent with the aviation disruption after 9/11. The year after in 2003 it can be observed that the avaition traffic returns to normal and starts to climb again. In the graph it can also be observed that a tromendunce amount of flights around 250k got cancelled when 9/11 happened, this was also done for security messures, but when the aviation oppened up again in 2002 the number of cancled flights dropped a lot and ever since it has been climbing. So even though the change table showed a decreassed in canceled flights the over all tendency of the cancelations is increasing and climbing to oversee the peak of canceled flights before 9/11. This hows the improvement observed in the selsected-airport comparison was not permanent across the full time period.  
@@ -347,9 +421,8 @@ In the graph at can be observed that the number of flights drops with nerly halv
 The two graph visualitations from 1999-2000 and 2002-2003 is shown as a headmap wher the warmer the cennections too the nodes which is the airports, the more flights travelled to that designatad airport. The IATA codes of the most 10 visited airports are also shown on the nodes, this makes it also possible to see which communities the 10 most visted airports belongs to. 
 The colour of the nodes shows the graphical communites of the airports, so the airports that is located in the same regian will have the same colour to show they are one community.
 
-<img width="900" alt="billede" src="https://github.com/user-attachments/assets/98bf377d-4a32-4f08-ab35-c1338c2fe1dc" /> 
+<img width="1512" height="1062" alt="image" src="https://github.com/user-attachments/assets/0aa8af3e-a059-40fc-90a6-d9f535857d7f" />
 
-<img width="900" alt="billede" src="https://github.com/user-attachments/assets/987338ec-e62c-49da-aabf-463a3fa7948a" />
 
 Between the two grapth there can be observed that a lot have changed in the way people travels, first of all from 1999-2000 it can be seen the most travelled airports are more spread out than from 2002-2003 where the most traveled airports are more centrulized, but ther can also be seen that there have been an increase of nodes which mean that there have been established more airports around the communities and this is because of the general higher demand of travelling via planes. 
 
