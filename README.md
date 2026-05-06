@@ -134,10 +134,22 @@ It is also important to note that the average departure delay and average arriva
 The two graph visualitations from 1999-2000 and 2002-2003 is shown as a headmap wher the warmer the cennections too the nodes which is the airports, the more flights travelled to that designatad airport. The IATA codes of the most 10 visited airports are also shown on the nodes, this makes it also possible to see which communities the 10 most visted airports belongs to. 
 The colour of the nodes shows the graphical communites of the airports, so the airports that is located in the same regian will have the same colour to show they are one community.
 
+The below graph is a 5 year split of the entire dataset. The first and last year of the dataset are excluded as they were not whole years, just some parts of the months. So each period the totel flights are summed, and so on for each feature. Now the edges are just the weigdes flight between two airports IATA. So for example LAX to JFK will have one edge, but its color will be depending on the weigth on a log scaled shown on each graph. A small statistics box is also attached for each period, which the most nodes in the last period from 2003-2007. 
+
+The airports are split into communities by Louvain, which clearly split the nodes into its seprate region when looking at the map. We wanted top 5 communites, but for some of the perioed louvain created less. In general the nodes communities are split into EAST, WEST, SOUTH and MID/NORTH region. Where the top communies are located changes from period to period, but where it creates the communites seems to be consistant across all periods. 
+
+From the 1. period 1988–1992 to 2. period 1993–1997, the number of airports decreased from 260 to 234, and the number of weighted edges decreased from 2,491 to 2,107. This means that the network had fewer airport-to-airport connections, even though the total number of flights increased from about 25.7 million to 26.3 million. The same pattern continues in 1998–2002, where the number of airports remained lower than in the 1. period and the number of weighted edges decreased further to 2,066, while total flights increased to about 27.8 million.
+
+This suggests that the US domestic flight network became more concentrated. In other words, airlines may have operated more flights on fewer routes, instead of spreading flights across many different airport connections. Therefore, the missing airports should not automatically be interpreted as airports closing permanently. It is more likely that some airports or routes became less active in this dataset, while larger hub airports and important routes handled more traffic. We definatively don't have the data for these removed airports. 
+
+This development fits with changes in US aviation after deregulation, where airlines increasingly organized their routes around hub-and-spoke systems. In this type of system, traffic is concentrated through major hub airports, while smaller airports may have fewer direct connections. GAO also found that although many airports gained service after deregulation, some small- and medium-sized communities experienced decreases in service. Therefore, the decrease in airports and edges can be interpreted as a sign of network centralization rather than an overall decline in air traffic.
+
+https://www.gao.gov/products/t-rced-96-126?utm_source=
+
+https://transportgeography.org/contents/chapter5/air-transport/hub-spoke-deregulation/
+
 <img width="1512" height="1062" alt="image" src="https://github.com/user-attachments/assets/0aa8af3e-a059-40fc-90a6-d9f535857d7f" />
 
-
-Between the two grapth there can be observed that a lot have changed in the way people travels, first of all from 1999-2000 it can be seen the most travelled airports are more spread out than from 2002-2003 where the most traveled airports are more centrulized, but ther can also be seen that there have been an increase of nodes which mean that there have been established more airports around the communities and this is because of the general higher demand of travelling via planes. 
 
 # Text analyzes
 Because Wikipedia was lunched in 2001 it was not feasiable to find text documents that the described the security in the airports and for this reason we are analysing some texts from 2003 and compare those with texts from 2010. There was used webscrabing with weekipidias own API'S for all the airports in the USA to gather all the aviable texts from 2003 to 2025. The table below describes how many words we scrabed through the years from every airprot, it can be observed that the newer the year is the more text was avaible:
