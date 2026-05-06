@@ -9,328 +9,35 @@ To analise the change of airport traffic before and after 9/11 we will make a gr
 
 The way we will analise the security improvement in the airports is with textuel analyse and here we are going to webscrabe relevent texts on weekipidia where we will gather all the scrabed texts into documents. With all the text in the documents we can start on tokenizing the words so it will be possible for us to find the most frequent used words. When all this is done we will visualised all the most frequent used words that was found with TF-IDF and visualize them with using word clouds.
 
+# US airport flight dataset
+The airline dataset is from RITA which was a unit within the U.S. Department of Transportation (USDOT). The unit manageed Bureau of Transportations Statistics (BTS), which collects data on airline on-time performace, traffic and finances. RITA was dissolved in 2015, but that years after our dataset was created. We downloaded the dataset from dataverse.hardvard.edu under the name "Data Expo 2009: Airline on time data" from American Statistical Association (ASA). The airline dataset has around 120 milion flights records in total, taking up around 12 GB of space. Each flight row has numarous features as date, depature time, arrival time, Carrier, Flightnum, Arrival delay / Depature delay, airtime, cancellation and ect. More detailed descriptions of the features can be seen on dataverse.hardvard.edu. 
+
+The graph below shows that the total number of US domestic flights generally increased from 1988 to 2007. Flight numbers were fairly stable until the late 1990s, before increasing around 2000 and 2001. After 9/11, the number of flights dropped sharply in 2002 by nearly half a million flights, which is consistent with the major disruption in the aviation system after the terrorist attacks. However, air traffic began to recover in 2003 and continued to increase strongly in the following years.
+
+Cancelled flights were much more unstable than total flights. The graph shows a clear peak around 2001, where cancellations increased dramatically, likely because of the security measures and disruption caused by 9/11. In 2002, cancellations dropped sharply as the aviation system reopened, but after that they started to increase again. Diverted flights stayed much lower than cancelled flights and were quite stable across the years.
+
+Overall, the graph shows long-term growth in US domestic air traffic, but it also shows that cancellations fluctuated significantly. This means that even though some short-term comparisons may show improvements in airport performance, these improvements were not necessarily permanent across the full time period.
+
+<figure>
+  <img src="https://github.com/user-attachments/assets/08299700-7a7a-41e4-8453-fe46a3dd7621"
+       alt="US Domestic Flights 1988–2007" width="100%">
+  <figcaption>
+    Figure: Trends in total, canceled, and diverted US domestic flights from 1988 to 2007.
+  </figcaption>
+</figure>
+
 # Graph analyzes
-Over the years there has been an incresed number of airports and flights going to the different airports in the USA and this is no difference for the period from 1999-2003. Even with the the terror attack in 2001 there was mutiple new airports that appered from 2002-2003 and the flights increased aslo substantially. From 1999-2000 there was 208 airports and this number incresed to 285 in the period 2002-2003. There is a substantially decrease in the number of delayed flights and cancled flights in the period from 2002-2003 then from 1999-2000. The overall distance also changed between these two time periods, in the period from 1999-2000 the average distance was longer than the average distance from 2002-2003. This can be observed in the two tabels belows that shows the airports network from 1999-2000 and 2002 - 2003: 
+For further analyse we will first take a closer look into the flight records one month before and the month of the terrorist attack. Before analysing the changes, it is important to understand that the categories in the table are measured in different ways. Some variables are measured in minutes, such as average airtime, average departure delay, and average arrival delay. Average distance is measured in kilometers, while total flights, cancelled origin count, and diverted origin count are flight counts. Therefore, the table should be read by comparing each category between August and September, rather than comparing the raw values across different categories.
 
-<!-- <table>
-  <tr>
-    <th colspan="9" align="center">Time period: 1999–2000</th>
-  </tr>
-  <tr>
-    <th>IATA</th>
-    <th>Region</th>
-    <th>Strength</th>
-    <th>Avg Airtime</th>
-    <th>Avg Distance</th>
-    <th>Avg Dep Delay</th>
-    <th>Avg Arr Delay</th>
-    <th>Cancelled Origin Count</th>
-    <th>Diverted Origin Count</th>
-  </tr>
-  <tr>
-    <td>ORD</td>
-    <td>Midwest</td>
-    <td>1190170</td>
-    <td>116.69</td>
-    <td>1370.14</td>
-    <td>14.56</td>
-    <td>14.24</td>
-    <td>35303</td>
-    <td>1447</td>
-  </tr>
-  <tr>
-    <td>ATL</td>
-    <td>Southeast</td>
-    <td>1058168</td>
-    <td>93.49</td>
-    <td>1068.41</td>
-    <td>11.23</td>
-    <td>8.19</td>
-    <td>16137</td>
-    <td>1057</td>
-  </tr>
-  <tr>
-    <td>DFW</td>
-    <td>Southwest</td>
-    <td>984122</td>
-    <td>122.35</td>
-    <td>1475.36</td>
-    <td>10.69</td>
-    <td>5.85</td>
-    <td>15963</td>
-    <td>1410</td>
-  </tr>
-  <tr>
-    <td>LAX</td>
-    <td>West</td>
-    <td>807862</td>
-    <td>140.57</td>
-    <td>1818.60</td>
-    <td>11.56</td>
-    <td>10.53</td>
-    <td>13715</td>
-    <td>755</td>
-  </tr>
-  <tr>
-    <td>PHX</td>
-    <td>Southwest</td>
-    <td>733226</td>
-    <td>108.87</td>
-    <td>1332.34</td>
-    <td>13.22</td>
-    <td>10.38</td>
-    <td>7701</td>
-    <td>681</td>
-  </tr>
-  <tr>
-    <td>STL</td>
-    <td>Midwest</td>
-    <td>690592</td>
-    <td>94.63</td>
-    <td>1068.31</td>
-    <td>10.97</td>
-    <td>7.41</td>
-    <td>7392</td>
-    <td>789</td>
-  </tr>
-  <tr>
-    <td>DTW</td>
-    <td>Midwest</td>
-    <td>615381</td>
-    <td>92.20</td>
-    <td>1008.31</td>
-    <td>10.95</td>
-    <td>5.13</td>
-    <td>9546</td>
-    <td>816</td>
-  </tr>
-  <tr>
-    <td>MSP</td>
-    <td>Midwest</td>
-    <td>581397</td>
-    <td>109.05</td>
-    <td>1268.48</td>
-    <td>8.40</td>
-    <td>3.13</td>
-    <td>7808</td>
-    <td>806</td>
-  </tr>
-  <tr>
-    <td>DEN</td>
-    <td>Mountain</td>
-    <td>546186</td>
-    <td>114.88</td>
-    <td>1435.99</td>
-    <td>12.28</td>
-    <td>10.52</td>
-    <td>6657</td>
-    <td>641</td>
-  </tr>
-  <tr>
-    <td>SFO</td>
-    <td>West</td>
-    <td>544031</td>
-    <td>146.24</td>
-    <td>1912.95</td>
-    <td>13.61</td>
-    <td>15.80</td>
-    <td>12387</td>
-    <td>621</td>
-  </tr>
-</table>
+The table gives a more detailed view of how air traffic changed from August 2001 to September 2001. The most noticeable change is the large increase in cancelled flights. Although total flights decreased by almost 10%, cancelled origin counts increased by more than 645%. This suggests that the September 11 attacks had a major immediate impact on the airline system, with many planned flights being cancelled rather than delayed.
 
- <table>
-  <tr>
-    <th colspan="9" align="center">Time period: 2002–2003</th>
-  </tr>
-  <tr>
-    <th>IATA</th>
-    <th>Region</th>
-    <th>Strength</th>
-    <th>Avg Airtime</th>
-    <th>Avg Distance</th>
-    <th>Avg Dep Delay</th>
-    <th>Avg Arr Delay</th>
-    <th>Cancelled Origin Count</th>
-    <th>Diverted Origin Count</th>
-  </tr>
-  <tr>
-    <td>ORD</td>
-    <td>Midwest</td>
-    <td>1388214</td>
-    <td>105.26</td>
-    <td>1216.27</td>
-    <td>7.84</td>
-    <td>5.53</td>
-    <td>15285</td>
-    <td>1104</td>
-  </tr>
-  <tr>
-    <td>DFW</td>
-    <td>Southwest</td>
-    <td>1228058</td>
-    <td>108.28</td>
-    <td>1235.17</td>
-    <td>5.61</td>
-    <td>1.01</td>
-    <td>8413</td>
-    <td>884</td>
-  </tr>
-  <tr>
-    <td>ATL</td>
-    <td>Southeast</td>
-    <td>1201228</td>
-    <td>84.20</td>
-    <td>1029.34</td>
-    <td>7.90</td>
-    <td>5.82</td>
-    <td>6794</td>
-    <td>950</td>
-  </tr>
-  <tr>
-    <td>LAX</td>
-    <td>West</td>
-    <td>812923</td>
-    <td>131.84</td>
-    <td>1617.66</td>
-    <td>4.29</td>
-    <td>0.75</td>
-    <td>4480</td>
-    <td>510</td>
-  </tr>
-  <tr>
-    <td>PHX</td>
-    <td>Southwest</td>
-    <td>687674</td>
-    <td>118.53</td>
-    <td>1453.29</td>
-    <td>6.93</td>
-    <td>1.57</td>
-    <td>3444</td>
-    <td>569</td>
-  </tr>
-  <tr>
-    <td>IAH</td>
-    <td>Southwest</td>
-    <td>609715</td>
-    <td>113.04</td>
-    <td>1347.36</td>
-    <td>3.25</td>
-    <td>2.37</td>
-    <td>1801</td>
-    <td>353</td>
-  </tr>
-  <tr>
-    <td>MSP</td>
-    <td>Midwest</td>
-    <td>572741</td>
-    <td>112.53</td>
-    <td>1310.30</td>
-    <td>4.31</td>
-    <td>0.91</td>
-    <td>3469</td>
-    <td>488</td>
-  </tr>
-  <tr>
-    <td>DTW</td>
-    <td>Midwest</td>
-    <td>561032</td>
-    <td>92.66</td>
-    <td>1006.10</td>
-    <td>6.76</td>
-    <td>1.17</td>
-    <td>4261</td>
-    <td>502</td>
-  </tr>
-  <tr>
-    <td>LAS</td>
-    <td>West</td>
-    <td>547541</td>
-    <td>113.76</td>
-    <td>1409.50</td>
-    <td>6.89</td>
-    <td>3.65</td>
-    <td>1880</td>
-    <td>480</td>
-  </tr>
-  <tr>
-    <td>DEN</td>
-    <td>Mountain</td>
-    <td>524394</td>
-    <td>125.50</td>
-    <td>1415.76</td>
-    <td>4.34</td>
-    <td>1.35</td>
-    <td>2417</td>
-    <td>386</td>
-  </tr>
-</table>  -->
+An interesting observation is that both average departure delay and average arrival delay decreased in September. At first, this could make it look like flight performance improved. However, this result should be interpreted carefully. Since many flights were cancelled, they would not be included in the delay averages. Therefore, the lower delay values do not necessarily mean that airports operated more efficiently. Instead, it may show that fewer delayed flights actually took place because many flights were removed from the schedule.
 
-The two tabels shows the top 10 most visited airports in the USA, where "IATA" is the International Air Transport Association codes that is used to identify the different airports, "Strength" is the number of flights that visited that giving airport in the period, "Avg Airtime, "Avg Dep Delay" and "Avg Arr Delay" are all messured in minutes, "Avg Distance" is messured in kilometers (km). Because the top 10 most visitet airports are not axactly the same in the two time periods, the direct comparison only includes the 8 airports that appear in both top-10 lists. This means the comparison of major recurring hubs, but not as a comparison of the entire US domestic airport system. 
+The diverted origin count also decreased slightly, but this may be connected to the lower total number of flights in September. Since there were fewer flights overall, there were also fewer opportunities for diversions. Therefore, the decrease in diversions is less important than the large increase in cancellations.
 
-<!-- <table>
-  <tr>
-    <th colspan="6" align="center">Change from 1999–2000 to 2002–2003</th>
-  </tr>
-  <tr>
-    <th>Compared Airports</th>
-    <th>Category</th>
-    <th>1999–2000</th>
-    <th>2002–2003</th>
-    <th>Change</th>
-    <th>Interpretation</th>
-  </tr>
-  <tr>
-    <td rowspan="7">ORD, DFW, ATL, LAX, PHX, MSP, DTW, DEN</td>
-    <td><b>Strength</b></td>
-    <td>6,516,512</td>
-    <td>6,976,264</td>
-    <td>+459,752 (+7.06%)</td>
-    <td>More flights in 2002–2003 ↑</td>
-  </tr>
-  <tr>
-    <td><b>Avg Airtime</b></td>
-    <td>112.26</td>
-    <td>109.85</td>
-    <td>-2.41 (-2.15%)</td>
-    <td>Slight decrease ↓</td>
-  </tr>
-  <tr>
-    <td><b>Avg Distance</b></td>
-    <td>1347.20</td>
-    <td>1285.49</td>
-    <td>-61.72 (-4.58%)</td>
-    <td>Slight decrease ↓</td>
-  </tr>
-  <tr>
-    <td><b>Avg Dep Delay</b></td>
-    <td>11.61</td>
-    <td>6.00</td>
-    <td>-5.61 (-48.35%)</td>
-    <td>Departure delays decreased a lot ↓</td>
-  </tr>
-  <tr>
-    <td><b>Avg Arr Delay</b></td>
-    <td>8.50</td>
-    <td>2.26</td>
-    <td>-6.23 (-73.36%)</td>
-    <td>Arrival delays decreased strongly ↓</td>
-  </tr>
-  <tr>
-    <td><b>Cancelled Origin Count</b></td>
-    <td>112,830</td>
-    <td>48,563</td>
-    <td>-64,267 (-56.96%)</td>
-    <td>Far fewer cancellations ↓</td>
-  </tr>
-  <tr>
-    <td><b>Diverted Origin Count</b></td>
-    <td>7,613</td>
-    <td>5,393</td>
-    <td>-2,220 (-29.16%)</td>
-    <td>Fewer diversions ↓</td>
-  </tr>
-</table> -->
+Overall, the table shows that September 2001 was not mainly characterized by longer delays, but by a sharp reduction in flights and a major increase in cancellations. This supports the idea that the terrorist attack caused a sudden disruption to US domestic air traffic.
+
+This means that cancellation count is the most important indicator in this comparison, because it captures the disruption more clearly than average delay or diversion count.
 
 <table>
   <tr>
@@ -403,20 +110,26 @@ The two tabels shows the top 10 most visited airports in the USA, where "IATA" i
   </tr>
 </table>
 
-The comparison shows that the 8 comman major airports had more flights in 2002-2003 than in 1999-2000, but their combined strength increased with 7% which corresponds to an increase with 459,752 flights. At the same time it can be seen seen that the average depature delay, average arrival delay, cancelled origin count and dicerted origin count all decreased. 
+The cancelled flights network graph compares the airport network in August 2001 with September 2001. Each node represents an airport, and the lines between airports represent routes where cancelled flights occurred. The color of the routes show how many cancelled flights occurred on that route, using a log scale. This means that stronger/brighter routes indicate routes with many more cancellations.
 
-This suggests that, for these selceted major airports, operational performance was better in 2002-2003 than in 1999-2000. Howecer, these results can not be intepreted as evidence that the entire aviation system has become more efficient. THe reason for this is because if the avaitation traffic is look upon a longer period from 1988-2007 it can be observed that there is an increase of canceled flights and general flights. This is demonstrated in the graph below:
+The graph shows a clear difference between August and September. In August, the network had 204 airports and 1,060 weighted edges, with 13,318 cancelled flights. In September, the number of total flights decreased from 544,351 to 490,698, but the number of cancellations increased sharply to 99,324 as the table above showed. This means that even though fewer flights were operated in September, cancellations became much more common.
 
-<img width="900" alt="billede" src="https://github.com/user-attachments/assets/08299700-7a7a-41e4-8453-fe46a3dd7621" />
+The September network is also visibly denser than the August network. There are more airports included in the cancellation network, increasing from 204 to 217, and the number of weighted edges increased from 1,060 to 1,582. This suggests that cancellations were not limited to only a few airports or routes, but spread across a larger part of the US domestic flight network.
 
-<img width="1799" height="650" alt="image" src="https://github.com/user-attachments/assets/379e2b7b-917b-4b00-8017-099e1269f7d1" />
+Major airports such as LAX, DFW, ORD, ATL, DCA, LGA, and BOS are amoung the top 10 nodes in the network, with highest cancelled fligts. In September, many of these airports are connected by stronger and more visible cancellation routes, showing that large hubs were strongly affected. The graph therefore supports the idea that the disruption in September 2001 affected the national airport network broadly, rather than only individual airports.
 
-
-
-In the graph at can be observed that the number of flights drops with nerly halv a million flights which is an extrordinory drop and it is consistent with the aviation disruption after 9/11. The year after in 2003 it can be observed that the avaition traffic returns to normal and starts to climb again. In the graph it can also be observed that a tromendunce amount of flights around 250k got cancelled when 9/11 happened, this was also done for security messures, but when the aviation oppened up again in 2002 the number of cancled flights dropped a lot and ever since it has been climbing. So even though the change table showed a decreassed in canceled flights the over all tendency of the cancelations is increasing and climbing to oversee the peak of canceled flights before 9/11. This hows the improvement observed in the selsected-airport comparison was not permanent across the full time period.  
+It is also important to note that the average departure delay and average arrival delay decreased in September. However, this does not necessarily mean that the system performed better. Since many flights were cancelled, they were not included in the delay averages. Therefore, the most important result in this graph is the large increase in cancellations and the wider spread of cancelled routes across the airport network.
 
 
-## Visualization of the graph
+<figure>
+  <img src="https://github.com/user-attachments/assets/379e2b7b-917b-4b00-8017-099e1269f7d1" 
+       alt="US Domestic Flights 1988–2007" width="100%">
+  <figcaption>
+    Figure: Septemper 2001 vs August 2001 comparison network graph - Cancelled weigted edges.
+  </figcaption>
+</figure>
+
+## General aviations developments graphs
 
 The two graph visualitations from 1999-2000 and 2002-2003 is shown as a headmap wher the warmer the cennections too the nodes which is the airports, the more flights travelled to that designatad airport. The IATA codes of the most 10 visited airports are also shown on the nodes, this makes it also possible to see which communities the 10 most visted airports belongs to. 
 The colour of the nodes shows the graphical communites of the airports, so the airports that is located in the same regian will have the same colour to show they are one community.
