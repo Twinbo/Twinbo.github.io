@@ -130,15 +130,11 @@ It is also important to note that the average departure delay and average arriva
 </figure>
 
 ## General aviations developments graphs
-
-The two graph visualitations from 1999-2000 and 2002-2003 is shown as a headmap wher the warmer the cennections too the nodes which is the airports, the more flights travelled to that designatad airport. The IATA codes of the most 10 visited airports are also shown on the nodes, this makes it also possible to see which communities the 10 most visted airports belongs to. 
-The colour of the nodes shows the graphical communites of the airports, so the airports that is located in the same regian will have the same colour to show they are one community.
-
 The below graph is a 5 year split of the entire dataset. The first and last year of the dataset are excluded as they were not whole years, just some parts of the months. So each period the totel flights are summed, and so on for each feature. Now the edges are just the weigdes flight between two airports IATA. So for example LAX to JFK will have one edge, but its color will be depending on the weigth on a log scaled shown on each graph. A small statistics box is also attached for each period, which the most nodes in the last period from 2003-2007. 
 
 The airports are split into communities by Louvain, which clearly split the nodes into its seprate region when looking at the map. We wanted top 5 communites, but for some of the perioed louvain created less. In general the nodes communities are split into EAST, WEST, SOUTH and MID/NORTH region. Where the top communies are located changes from period to period, but where it creates the communites seems to be consistant across all periods. 
 
-From the 1. period 1988–1992 to 2. period 1993–1997, the number of airports decreased from 260 to 234, and the number of weighted edges decreased from 2,491 to 2,107. This means that the network had fewer airport-to-airport connections, even though the total number of flights increased from about 25.7 million to 26.3 million. The same pattern continues in 1998–2002, where the number of airports remained lower than in the 1. period and the number of weighted edges decreased further to 2,066, while total flights increased to about 27.8 million.
+From the 1. period 1988–1992 to 2. period 1993–1997, the number of airports decreased from 260 to 234, and the number of weighted edges decreased from 2,491 to 2,107. This means that the network had fewer airport-to-airport connections, even though the total number of flights increased from about 25.7 million to 26.3 million. The same pattern continues in 1998-2002, where the number of airports remained lower than in the 1. period and the number of weighted edges decreased further to 2,066, while total flights increased to about 27.8 million.
 
 This suggests that the US domestic flight network became more concentrated. In other words, airlines may have operated more flights on fewer routes, instead of spreading flights across many different airport connections. Therefore, the missing airports should not automatically be interpreted as airports closing permanently. It is more likely that some airports or routes became less active in this dataset, while larger hub airports and important routes handled more traffic. We definatively don't have the data for these removed airports. 
 
@@ -149,6 +145,16 @@ https://www.gao.gov/products/t-rced-96-126?utm_source=
 https://transportgeography.org/contents/chapter5/air-transport/hub-spoke-deregulation/
 
 <img width="1512" height="1062" alt="image" src="https://github.com/user-attachments/assets/0aa8af3e-a059-40fc-90a6-d9f535857d7f" />
+
+
+The table shows that the middle periods had fewer weighted edges, but more flights per edge. This suggests that traffic became more concentrated, with more flights being operated on fewer airport-to-airport connections. The highest cancellation rate was in 1998–2002, which is expected because this period includes 2001 and the disruption after 9/11. In the final period, 2003–2007, the network expanded strongly again, with more airports and route connections, while the cancellation rate decreased compared with 1998–2002.
+
+| Period | Total flights | Weighted edges | Flights per edge | Cancellations | Cancellation rate |
+|---|---:|---:|---:|---:|---:|
+| 1988–1992 | 25.7 million | 2,491 | ~10,300 | 273,127 | ~1.1% |
+| 1993–1997 | 26.3 million | 2,107 | ~12,500 | 444,789 | ~1.7% |
+| 1998–2002 | 27.8 million | 2,066 | ~13,500 | 782,651 | ~2.8% |
+| 2003–2007 | 35.4 million | 3,949 | ~9,000 | 645,638 | ~1.8% |
 
 
 # Text analyzes
