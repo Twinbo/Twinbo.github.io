@@ -177,16 +177,41 @@ Because of the growth of available meaningful words, later years has a naturally
 
 ## Word clouds visualization
 
-The two figures below shows the word cloud visualization with the most frequent used words with in the documents from 2003 and 2010. The bigger the terms are in the word cloud visualitation the more frequent that specific word is.
 
-<img width="900" alt="billede" src="https://github.com/user-attachments/assets/0db016f8-3eec-4bae-8f4d-d2df790c5138" />
-<img width="900" alt="billede" src="https://github.com/user-attachments/assets/0e0833af-1b3d-4c68-9eb6-550c6efea110" />
+<figure>
+  <img width="3895" height="2024" alt="billede" src="https://github.com/user-attachments/assets/e3d3edf2-5b81-4bd4-a220-0020998e24fa" />
+  <figcaption>
+    Figure: Shows the TF-IDF wordcloud for the whole periode 2003-2025
+  </figcaption>
+</figure>
 
-In the two figures it can be observed that the security and safty related words are not dominant at all, but it can be observed that in 2003 one of the frequent terms that got repeated a lot was "crashed". However because word cloud doesn't provide context to the terms is is not possible to determine from the visualitation that the term "chrashed" directly have a correlation to safty such as investigating airplane chrashes to prevent it for happeningn again. 
+<figure>
+  <img width="790" height="431" alt="billede" src="https://github.com/user-attachments/assets/dddeeac2-2a3a-4b47-ab99-73c783a36591" />
+  <figcaption>
+    Figure: Shows the TF-IDF wordcloud fro the peiod 2003-2014
+  </figcaption>
+</figure>
 
-Similar, for 2010 word cloud contains the frequent terms such as "World War" and "War". But because of the missing context of the use of these specefic terms it is not possible to determine if they have a correlation to safty for the airports, but the terms might reflect military usech of the airports.
+<figure>
+  <img width="790" height="431" alt="billede" src="https://github.com/user-attachments/assets/9b37120b-969a-45fb-8231-408e1cef8be0" />
+  <figcaption>
+    Figure: Shows the TF-IDF wordcloud fro the peiod 2015-2025
+  </figcaption>
+</figure>
 
+<figure>
+  <img width="1790" height="546" alt="billede" src="https://github.com/user-attachments/assets/3aa22933-5728-4cdd-bd7d-8813d94fbc13" />
+  <figcaption>
+    Figure: Shows the difference in languarage between the two periods (2003-2014 and 2015-2025) 
+  </figcaption>
+</figure>
 
+<figure>
+  <img width="1028" height="545" alt="billede" src="https://github.com/user-attachments/assets/c095d32b-a322-4922-964f-77a309c71973" />
+  <figcaption>
+    Figure: Shows the development of the term specific TF-IDF 
+  </figcaption>
+</figure>
 
 
 
