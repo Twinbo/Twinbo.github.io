@@ -3,7 +3,7 @@
 
 This project explores how the airport traffic look a few years before 9/11 and then compares to how it look a couple years later, this an interresting comparison because over the few decades, the security in airports has been substantially increased but the amount of people who are travelling on plane also have been substially increse. It is expected that there can be observed a substatially more media covered text on the secruity in the airports after 9/11 and fewer flights the year later but in the later years it is expected that the traffic has increased substantially than it was before 9/11 but still with increasing secruity in the airports.
 
-## How will this changed be analized :)?
+## How will this change be analized?
 
 To analise the change of airport traffic before and after 9/11 we will make a graph where all the airpots will be the nodes in the graph and the flights connecting to the airpots will be the edges. When we are making the graph we will make it as a wighted edge. The weight to the nodes will be the number of flights going to the specifik airport, this will be useful to see which airports is most frequently visited and it will give an indication on the changes of the traffic in the airports.
 
@@ -158,50 +158,23 @@ The table shows that the middle periods had fewer weighted edges, but more fligh
 
 
 # Text analyzes
-Because Wikipedia was lunched in 2001 it was not feasiable to find text documents that the described the security in the airports and for this reason we are analysing some texts from 2003 and compare those with texts from 2010. There was used webscrabing with weekipidias own API'S for all the airports in the USA to gather all the aviable texts from 2003 to 2025. The table below describes how many words we scrabed through the years from every airprot, it can be observed that the newer the year is the more text was avaible:
+The text analysis investigates the development of the descriptive language used to describe the airports in the Unites States of America (USA) has changed over time, especially in relation to security, terrorism, TSA, screening, and 9/11. This analysis is based on the historical text from Wikipedia from the airport pages withing the USA in the period from 2003-2025. For each year, the pages were scrabbed and stored in documents so it could be process for this analysis. 
 
-| Year | Status | Cleaned Words Found |
-|------|--------|---------------------|
-| 2001 | Too short / not found | - |
-| 2002 | Too short / not found | - |
-| 2003 | Found | 182 |
-| 2004 | Found | 390 |
-| 2005 | Found | 1056 |
-| 2006 | Found | 1424 |
-| 2007 | Found | 2175 |
-| 2008 | Found | 2919 |
-| 2009 | Found | 3148 |
-| 2010 | Found | 3387 |
-| 2011 | Found | 3372 |
-| 2012 | Found | 3595 |
-| 2013 | Found | 3915 |
-| 2014 | Found | 4012 |
-| 2015 | Found | 4033 |
-| 2016 | Found | 4035 |
-| 2017 | Found | 4111 |
-| 2018 | Found | 3863 |
-| 2019 | Found | 3894 |
-| 2020 | Found | 4276 |
-| 2021 | Found | 4318 |
-| 2022 | Found | 4351 |
-| 2023 | Found | 4500 |
-| 2024 | Found | 4515 |
-| 2025 | Found | 4599 |
+The reason this analysis starts from 2003 and not 2001 or before where it really is interesting so it could be more in death on how 9/11 impacted the whole aviation system withing the airports itself, is because Wikipedia was lunched in 2001. In the first years of Wikipedia there was none, to very little, text available on many airport pages. Before Wikipedia became widely used, information about the many airports was commonly found through newsletters, newspapers, television, radio, or the official airports sources. Therefore, it was not possible to gather any meaningful text before 2003 on Wikipedia that could be used in a comparison.
 
-The table above illustrate the number of words gathered from the airports in the USA from weekpidea over the years, but it can be observed that the number of words has been substancually increased over the years and this is a problem for analyzing how the security in the aiprots has become more strict and increased. The reason for this is because the later years contains more secruety-related language than the sparse early-years. As a result of this, the later documents are more likely to contain security-related language simply because the documents are longer and more detialed.
+This limitation of available text is important when interpreting the results. Such as in 2003 we were only able to gather around 15273 meaningful tokens, and this number of tokens has substantially increased over the years which also can be observed in the figure below. Already in 2025, we were able to gather 905719 thousand tokens. One token describes one word, so the available meaningful words grows from 15273 words to 905719 words.
 
-These issues is also important to take into consideration when interpretating the TF-IDF scores shown in the following table. TF-IDF scores messure how important a term is within a document relative to the full collection of documents. In this case the TF-IDF scores shows an indication of how promenent selected security-related words are in the airport texts from 2003 and 2010. But because of the massive difference of availe text between 2003 and 2010 the TF-IDF values needs to be intepretaed cautiously. 
+<figure>
+  <img width="877" height="468" alt="billede" src="https://github.com/user-attachments/assets/a0983182-d58e-480d-a17b-feac7ab973ae" />
+  <figcaption>
+    Figure: Shows the increasing available tokens on Wikipedia 
+  </figcaption>
+</figure>
 
-| TERM      | TF-IDF SCORE (2003) | TF-IDF SCORE (2010) | PERCENT CHANGE (2003→2010) |
-|-----------|---------------------|---------------------|----------------------------|
-| SECURITY  | 0.0087              | 0.0180              | +106.9%                    |
-| SAFETY    | 0.0000              | 0.0221              | NEW                        |
-| TSA       | 0.0000              | 0.0036              | NEW                        |
-| SCREENING | 0.0000              | 0.0054              | NEW                        |
-| SEPTEMBER | 0.0087              | 0.0281              | +223.0%                    |
-| ATTACK    | 0.0000              | 0.0049              | NEW                        |
 
-It can be observed in the table above that several security-related terms appear with higher TF-IDF scores in 2010 than in 2003. This suggest that security-language became more visuable in the airport texts over time. However, this is not a direct proof that the airport security itself became stricter after 9/11, the major reason for this is because the size difference of the text from 2003 and 2010. The 2003 text only contains 183 words and the 2010 text contains 3387 words which means there is much more room for mentioning security-related words more in deepth and detail. This means these resutls are better understood as an indication that the security is more promenant in the recent years. Because of the security-related words is such a small part of the combined words used in all the texts, they will not be as dominent in the word cloud visualition as expected. 
+Because of the growth of available meaningful words, later years has a naturally higher change of containing specific words such as security, TSA, screening, terror, or attack. Therefore, an increase in these terms necessary doesn’t mean that airport security became proportionately more important over the years in the text. Part of the increase may simply be caused by the fact of the more available text over the years. 
+
+
 ## Word clouds visualization
 
 The two figures below shows the word cloud visualization with the most frequent used words with in the documents from 2003 and 2010. The bigger the terms are in the word cloud visualitation the more frequent that specific word is.
