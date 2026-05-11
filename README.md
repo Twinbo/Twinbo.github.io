@@ -162,7 +162,7 @@ The text analysis investigates the development of the descriptive language used 
 
 The reason this analysis starts from 2003 and not 2001 or before where it really is interesting so it could be more in death on how 9/11 impacted the whole aviation system withing the airports itself, is because Wikipedia was lunched in 2001. In the first years of Wikipedia there was none, to very little, text available on many airport pages. Before Wikipedia became widely used, information about the many airports was commonly found through newsletters, newspapers, television, radio, or the official airports sources. Therefore, it was not possible to gather any meaningful text before 2003 on Wikipedia that could be used in a comparison.
 
-This limitation of available text is important when interpreting the results. Such as in 2003 we were only able to gather around 15273 meaningful tokens, and this number of tokens has substantially increased over the years which also can be observed in the figure below. Already in 2025, we were able to gather 905719 thousand tokens. One token describes one word, so the available meaningful words grows from 15273 words to 905719 words.
+This limitation of available text is important when interpreting the results. Such as in 2003 we were only able to gather around 15273 meaningful tokens, and this number of tokens has substantially increased over the years which also can be observed in the figure below. Already in 2025, we were able to gather 905719 tokens. One token describes one word, so the available meaningful words grows from 15273 words to 905719 words.
 
 <figure>
   <img width="877" height="468" alt="billede" src="https://github.com/user-attachments/assets/a0983182-d58e-480d-a17b-feac7ab973ae" />
