@@ -125,7 +125,7 @@ It is also important to note that the average departure delay and average arriva
   <img src="https://github.com/user-attachments/assets/379e2b7b-917b-4b00-8017-099e1269f7d1" 
        alt="US Domestic Flights 1988–2007" width="100%">
   <figcaption>
-    Figure: Septemper 2001 vs August 2001 comparison network graph - Cancelled weigted edges.
+    Figure: September 2001 vs August 2001 comparison network graph - Cancelled weigted edges.
   </figcaption>
 </figure>
 
@@ -144,7 +144,7 @@ https://www.gao.gov/products/t-rced-96-126?utm_source=
 
 https://transportgeography.org/contents/chapter5/air-transport/hub-spoke-deregulation/
 
-<img width="1512" height="1062" alt="image" src="https://github.com/user-attachments/assets/0aa8af3e-a059-40fc-90a6-d9f535857d7f" />
+<img width="1471" height="1047" alt="image" src="https://github.com/user-attachments/assets/c7318640-0708-4758-92b5-7bf6a7bc600f" />
 
 
 The table shows that the middle periods had fewer weighted edges, but more flights per edge. This suggests that traffic became more concentrated, with more flights being operated on fewer airport-to-airport connections. The highest cancellation rate was in 1998–2002, which is expected because this period includes 2001 and the disruption after 9/11. In the final period, 2003–2007, the network expanded strongly again, with more airports and route connections, while the cancellation rate decreased compared with 1998–2002.
