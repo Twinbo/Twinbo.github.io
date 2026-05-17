@@ -1,11 +1,18 @@
 
-# How did the airport traffic and security evolve after the terror incedint on the 11/09-2001 also known as (9/11) in the United Stated of America?
+# How did the airport traffic and security evolve after the terror incedint on the 11/09-2001 also known as (9/11), aswell as across 1988-2007 in the United Stated of America?
 
 This project explores how the airport traffic look a few years before 9/11 and then compares to how it look a couple years later, this an interresting comparison because over the few decades, the security in airports has been substantially increased but the amount of people who are travelling on plane also have been substially increse. It is expected that there can be observed a substatially more media covered text on the secruity in the airports after 9/11 and fewer flights the year later but in the later years it is expected that the traffic has increased substantially than it was before 9/11 but still with increasing secruity in the airports.
 
-## How will this change be analized?
+/\ skal erstatte det ovenover, men rettes lige til først. 
 
-To analise the change of airport traffic before and after 9/11 we will make a graph where all the airpots will be the nodes in the graph and the flights connecting to the airpots will be the edges. When we are making the graph we will make it as a wighted edge. The weight to the nodes will be the number of flights going to the specifik airport, this will be useful to see which airports is most frequently visited and it will give an indication on the changes of the traffic in the airports.
+This projects explortes how airport traffic got affected by 9/11, and in general how airport routes evolved from late 80'ties to early 2000's. The project will also look into how different wording and topics evolves on each airports wikipedia page. The change in evation secutiry and in general is especialy intereting in this time period as major overhauls was done after the terrorist attack.  1. cite. The period which the text analysis will cover, is around 2003-2025, this is because wikipidia was founded in 2001, and only took off a couple of years later. TSA (Transportation Security Administration) was also created after the attack as a way to ensure proper security and rules for travel. 2. cite. This is also a direct result of the attact, which we hopely also can see in the data, aswell as how number of flights developed. 
+
+1. cite: https://www.tsa.gov/about/employee-stories/day-tsa-history-november-19-2001
+2. cite: https://www.gao.gov/products/gao-03-1150t
+
+## Analysing Aviation Development Through Route Networks and Textual Change
+
+To analyse the change of airport traffic before and after 9/11 we will make a graph where all the airpots will be the nodes in the graph and the flights connecting to the airpots will be the edges. When we are making the graph we will make it as a wighted edge. The weight to the nodes will be the number of flights going to the specifik airport, this will be useful to see which airports is most frequently visited and it will give an indication on the changes of the traffic in the airports.
 
 The way we will analise the security improvement in the airports is with textuel analyse and here we are going to webscrabe relevent texts on weekipidia where we will gather all the scrabed texts into documents. With all the text in the documents we can start on tokenizing the words so it will be possible for us to find the most frequent used words. When all this is done we will visualised all the most frequent used words that was found with TF-IDF and visualize them with using word clouds.
 
@@ -14,7 +21,7 @@ The airline dataset is from RITA which was a unit within the U.S. Department of 
 
 The graph below shows that the total number of US domestic flights generally increased from 1988 to 2007. Flight numbers were fairly stable until the late 1990s, before increasing around 2000 and 2001. After 9/11, the number of flights dropped sharply in 2002 by nearly half a million flights, which is consistent with the major disruption in the aviation system after the terrorist attacks. However, air traffic began to recover in 2003 and continued to increase strongly in the following years.
 
-Cancelled flights were much more unstable than total flights. The graph shows a clear peak around 2001, where cancellations increased dramatically, likely because of the security measures and disruption caused by 9/11. In 2002, cancellations dropped sharply as the aviation system reopened, but after that they started to increase again. Diverted flights stayed much lower than cancelled flights and were quite stable across the years.
+Cancelled flights were much more unstable than total flights. The graph shows a clear peak around 2001, where cancellations increased dramatically, likely because of the security measures and disruption caused by 9/11. In 2002, cancellations dropped sharply as the aviation system reopened, but after that they started to increase again as more flight in general also increased. Diverted flights stayed much lower than cancelled flights and were quite stable across the years.
 
 Overall, the graph shows long-term growth in US domestic air traffic, but it also shows that cancellations fluctuated significantly. This means that even though some short-term comparisons may show improvements in airport performance, these improvements were not necessarily permanent across the full time period.
 
@@ -41,7 +48,7 @@ This means that cancellation count is the most important indicator in this compa
 
 <table>
   <tr>
-    <th colspan="6" align="center">Change from 2001 Aug to 2001 Sep</th>
+    <th colspan="6" align="center">Change from 2001 August to 2001 September</th>
   </tr>
   <tr>
     <th>Compared Airports</th>
@@ -122,8 +129,8 @@ It is also important to note that the average departure delay and average arriva
 
 
 <figure>
-  <img src="https://github.com/user-attachments/assets/379e2b7b-917b-4b00-8017-099e1269f7d1" 
-       alt="US Domestic Flights 1988–2007" width="100%">
+  <img width="6734" height="2450" alt="image" src="https://github.com/user-attachments/assets/def1395b-cb02-4380-90d9-cfb459e8c0eb" />
+
   <figcaption>
     Figure: September 2001 vs August 2001 comparison network graph - Cancelled weigted edges.
   </figcaption>
