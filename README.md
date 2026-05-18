@@ -134,56 +134,56 @@ This means that cancellation count is the most important indicator in this compa
     <td rowspan="7">All airports appearing in both periods<br><b>217 airports/nodes</b></td>
     <td><b>Total Flights</b></td>
     <td>534,460</td>
-    <td>466,397</td>
-    <td>-68,063(-12.73%)</td>
+    <td>469,162</td>
+    <td>-65,298 (-12.22%)</td>
     <td>Fewer total flights post-911 ↓</td>
   </tr>
 
   <tr>
     <td><b>Avg Airtime</b></td>
     <td>103.86</td>
-    <td>101.18</td>
-    <td>-2.68 (-2.58%)</td>
+    <td>101.08</td>
+    <td>-2.78 (-2.68%)</td>
     <td>Slight decrease ↓</td>
   </tr>
 
   <tr>
     <td><b>Avg Distance</b></td>
     <td>1,197.65</td>
-    <td>1,161.93</td>
-    <td>-35.72 (-2.98%)</td>
+    <td>1,162.74</td>
+    <td>-34.90 (-2.91%)</td>
     <td>Slight decrease ↓</td>
   </tr>
 
   <tr>
     <td><b>Avg Dep Delay</b></td>
     <td>8.82</td>
-    <td>6.18</td>
-    <td>-2.64 (-29.96%)</td>
+    <td>5.85</td>
+    <td>-2.97 (-33.64%)</td>
     <td>Departure delays decreased ↓</td>
   </tr>
 
   <tr>
     <td><b>Avg Arr Delay</b></td>
     <td>7.18</td>
-    <td>0.35</td>
-    <td>-6.83 (-95.08%)</td>
+    <td>-0.07</td>
+    <td>-7.25 (-101.02%)</td>
     <td>Arrival delays decreased strongly ↓</td>
   </tr>
 
   <tr>
     <td><b>Cancelled Origin Count</b></td>
     <td>12,694</td>
-    <td>84,091</td>
-    <td>+71,397 (+562.45%)</td>
+    <td>98,681</td>
+    <td>+85,987 (+677.38%)</td>
     <td>Far more cancellations ↑</td>
   </tr>
 
   <tr>
     <td><b>Diverted Origin Count</b></td>
     <td>1,402</td>
-    <td>678</td>
-    <td>-724 (-51.64%)</td>
+    <td>1,205</td>
+    <td>-197 (-14.05%)</td>
     <td>Fewer diversions ↓</td>
   </tr>
 </table>
@@ -200,7 +200,7 @@ It is also important to note that the average departure delay and average arriva
 
 
 <figure>
-  <img width="1685" height="609" alt="image" src="https://github.com/user-attachments/assets/bb354a29-a4f2-4e86-9be3-29bcc08a8fd4" />
+  <img width="1775" height="646" alt="image" src="https://github.com/user-attachments/assets/b8a1e0ee-3c10-4dde-8dd3-3d80e7ff7ce7" />
 
   <figcaption>
     Figure: Pre vs Post 9/11 comparison network graph - Cancelled weigted edges.
