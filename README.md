@@ -183,14 +183,16 @@ Because of the growth of available meaningful words, later years has a naturally
 
 
 ## Word clouds visualization
-
-
+The word clouds shows the most important TF-IDF terms in the collected airports texts. The TF-IDF words highlights the words that is relative importen for a document compared to the full collections of documents. THis makes it useful to identify words that charactirase specifik periods. In the follwoing word clouds visualization there can be observed how the language was used in the hole poriode from 2003-2025 and after this there can be observed an comparison on how the language used by the airorts have changed over time. There will here be look upon a period from 2003-2014 that will be compared to 2015-2025. To make these word cloud visualization it was needed to have a lot of filtering, because some words such as "airport", destination location and city names was really generic for all the periods and because of this it would not be interresting to look upon the genaric most frequent words, because this wouldn't give an insigt of how the periods have changed over time.
 <figure>
   <img width="3895" height="2024" alt="billede" src="https://github.com/user-attachments/assets/e3d3edf2-5b81-4bd4-a220-0020998e24fa" />
   <figcaption>
     Figure: Shows the TF-IDF wordcloud for the whole periode 2003-2025
   </figcaption>
 </figure>
+In the word cloud visualization above it can be observed that many of the largest words are related to airport descriptions and functionality, such as administration, federal, united states, eneral and runway. This suggest that much of the Wikipidea text descripes the overall infrastructure, ownership, some location that failed to be filtered out but also the operations details of the aviation system.
+
+The same goes for the periods from 2003-2014 and 2015-2025, in those periods it was also primaerly the administration of the airports and the avaition that is most frequent.
 
 <figure>
   <img width="790" height="431" alt="billede" src="https://github.com/user-attachments/assets/dddeeac2-2a3a-4b47-ab99-73c783a36591" />
@@ -206,12 +208,10 @@ Because of the growth of available meaningful words, later years has a naturally
   </figcaption>
 </figure>
 
-<figure>
-  <img width="1790" height="546" alt="billede" src="https://github.com/user-attachments/assets/3aa22933-5728-4cdd-bd7d-8813d94fbc13" />
-  <figcaption>
-    Figure: Shows the difference in languarage between the two periods (2003-2014 and 2015-2025) 
-  </figcaption>
-</figure>
+In the two word clouds visualizations above there can be observed, that there have not been a big change of the language used on discribing the airports and avaition systems over time, but if we look at the big courpus for the hole period from 2003-2025 and then campare to the seperate two periods 2003-2014 and 2015-2025. It can be observed that secruaty for both the period 2003-2014 and 2015-2025 is much more frequent than the hole courpus combined, this indicates that the security in the airports and the avation industry always have been prioitised, but it is not a word that is not frequint enough to be noticiable. But this not the oly thing that can be observed, because in the earlier period from 2003-2014 some of the words that are slighty more frequent used than in the later periods from 2015-2025, is such as "accident" and "safty". This is an indication that in the earlier periods the safte of the planes was more important and written more about and the same goes for the accidents, but here it indicates that there might have been more accidents either regardin the planes or in the airports also had a higher focus point. But these interepetation also needs to be intepetated carefully, because in the later periods of the weekipidea texts contains much more text than the earlier. This means that because the words such as "safty" and "accident" seems to be more frequent in the ealier years, then it can be because of the limited text and there are therefore not as a big divertion use of words in the earlier years than the later years.  
+
+## Development of secuirty-related terms
+The figure below shows the TF-IDF scores for selected security-relates terms over time. The terms incluide security, TSA, screening, teroor, terrorsim, attack, 9/11 was replace with September Elven abd safety. These terms were chosen because they are related to airport secuirty and the broader consequences of 9/11.
 
 <figure>
   <img width="1028" height="545" alt="billede" src="https://github.com/user-attachments/assets/c095d32b-a322-4922-964f-77a309c71973" />
@@ -220,7 +220,16 @@ Because of the growth of available meaningful words, later years has a naturally
   </figcaption>
 </figure>
 
+The tesult from the observation above needs to be intepretaded carefully because of the amount of aviliable Wikipedia text increases strongly over time, as menchiened earlier the later years may contain more mentions of the security-level words simply because the documents are longer and more detailed. So these results from the TF-IDF score should not be interpretaded as direct evidence that airport secruity became more important over time, but rather as an indication of how the langauge in the aiprot pages shifts is focus on using these specifc word.
 
+It can be observed in the figure is that the graph maximum TF-IDF score is around 0.02. This means that the selceted security-related terms do not dominate the airport texts. In other words, even though such terms as security, safety, TSA, and screening are relevant to the topic the Wikipidea airport pages are still mainly focused on general airport descriptions and infrastructures. 
+
+In the TF-IDF score figure it can be observed that the mentioning of 9/11 was most frequent between 2003-2005 where it eversince have been slightly decresing aport in the middel of 2005-2010. This is not the only thing that is notiacible such as attack peaked around 2004 and 2010 which indicates that in this periods there was some insececurity regarding the avation, but ever since it has be fequently low. The terms such as security and safety increases stronlgy around 2008-2011 and still remains one of the important selected terms in later years, which also indicates that the safty and secruety in the aviation industry still remains important. 
+
+But a surprigsengly observations that can be made is that the term TSA is not mentioned at all and the reason it is interesting is because that TSA stands for Transportation Security Administration, the reason this is an really important term when analyzing the direct impact 9/11 had for the avation system and the overall secrutity in the airports, is because the TSA was founded and signed because of 9/11 and here was established the 19'th November 2001. TSA is designed to prevent similar attacks in the future, where it driven by the disre to help the USA. TSA is responsible for screening passengers and baggage in the airpots and this is to strengthen the overall secruity and the safety in the airports. 
+Source: https://www.tsa.gov/history
+
+One possible explantion is that individuel Wikipedia pages often describe local airport infrastructure and historical developments, rather than national security agencies. Even though TSA is important for the airport security and the transporttation secruity as a hole, it may not be mentioned direclt on the aiport pages. This shows an important limitation of the text analysis because the Wikipedea airport pages may not fully capture broader institutional changes in avation security after 9/11. Another explination of this could also be related to the filtering of words and this could potentionelly lead TSA to be filtered out. 
 
 # Discussion
 
