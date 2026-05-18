@@ -60,14 +60,14 @@ This means that cancellation count is the most important indicator in this compa
   </tr>
 
   <tr>
-    <td rowspan="7">All airports appearing in both periods</td>
+    <td rowspan="7">All airports appearing in both periods<br><b>220 airports/nodes</b></td>
     <td><b>Total Flights</b></td>
     <td>544,335</td>
     <td>490,698</td>
     <td>-53,637 (-9.85%)</td>
     <td>Fewer total flights in Sep ↓</td>
   </tr>
-
+  
   <tr>
     <td><b>Avg Airtime</b></td>
     <td>72.48</td>
