@@ -26,8 +26,8 @@ Cancelled flights were much more unstable than total flights. The graph shows a 
 Overall, the graph shows long-term growth in US domestic air traffic, but it also shows that cancellations fluctuated significantly. This means that even though some short-term comparisons may show improvements in airport performance, these improvements were not necessarily permanent across the full time period.
 
 <figure>
-  <img src="https://github.com/user-attachments/assets/08299700-7a7a-41e4-8453-fe46a3dd7621"
-       alt="US Domestic Flights 1988–2007" width="100%">
+  <img width="100%" alt="US Domestic Flights 1988–2007" src="https://github.com/user-attachments/assets/b11416cc-4c07-410b-b04a-78f794675722" />
+
   <figcaption>
     Figure: Trends in total, canceled, and diverted US domestic flights from 1988 to 2007.
   </figcaption>
@@ -117,6 +117,77 @@ This means that cancellation count is the most important indicator in this compa
   </tr>
 </table>
 
+<table>
+  <tr>
+    <th colspan="6" align="center">Change from 2001 Pre 911 to 2001 Post 911</th>
+  </tr>
+  <tr>
+    <th>Compared Airports</th>
+    <th>Category</th>
+    <th>2001 Pre 911</th>
+    <th>2001 Post 911</th>
+    <th>Change</th>
+    <th>Interpretation</th>
+  </tr>
+
+  <tr>
+    <td rowspan="7">All airports appearing in both periods<br><b>217 airports/nodes</b></td>
+    <td><b>Total Flights</b></td>
+    <td>534,460</td>
+    <td>466,397</td>
+    <td>-68,063(-12.73%)</td>
+    <td>Fewer total flights post-911 ↓</td>
+  </tr>
+
+  <tr>
+    <td><b>Avg Airtime</b></td>
+    <td>103.86</td>
+    <td>101.18</td>
+    <td>-2.68 (-2.58%)</td>
+    <td>Slight decrease ↓</td>
+  </tr>
+
+  <tr>
+    <td><b>Avg Distance</b></td>
+    <td>1,197.65</td>
+    <td>1,161.93</td>
+    <td>-35.72 (-2.98%)</td>
+    <td>Slight decrease ↓</td>
+  </tr>
+
+  <tr>
+    <td><b>Avg Dep Delay</b></td>
+    <td>8.82</td>
+    <td>6.18</td>
+    <td>-2.64 (-29.96%)</td>
+    <td>Departure delays decreased ↓</td>
+  </tr>
+
+  <tr>
+    <td><b>Avg Arr Delay</b></td>
+    <td>7.18</td>
+    <td>0.35</td>
+    <td>-6.83 (-95.08%)</td>
+    <td>Arrival delays decreased strongly ↓</td>
+  </tr>
+
+  <tr>
+    <td><b>Cancelled Origin Count</b></td>
+    <td>12,694</td>
+    <td>84,091</td>
+    <td>+71,397 (+562.45%)</td>
+    <td>Far more cancellations ↑</td>
+  </tr>
+
+  <tr>
+    <td><b>Diverted Origin Count</b></td>
+    <td>1,402</td>
+    <td>678</td>
+    <td>-724 (-51.64%)</td>
+    <td>Fewer diversions ↓</td>
+  </tr>
+</table>
+
 The cancelled flights network graph compares the airport network in August 2001 with September 2001. Each node represents an airport, and the lines between airports represent routes where cancelled flights occurred. The color of the routes show how many cancelled flights occurred on that route, using a log scale. This means that stronger/brighter routes indicate routes with many more cancellations.
 
 The graph shows a clear difference between August and September. In August, the network had 204 airports and 1,060 weighted edges, with 13,318 cancelled flights. In September, the number of total flights decreased from 544,351 to 490,698, but the number of cancellations increased sharply to 99,324 as the table above showed. This means that even though fewer flights were operated in September, cancellations became much more common.
@@ -129,10 +200,10 @@ It is also important to note that the average departure delay and average arriva
 
 
 <figure>
-  <img width="6734" height="2450" alt="image" src="https://github.com/user-attachments/assets/def1395b-cb02-4380-90d9-cfb459e8c0eb" />
+  <img width="1685" height="609" alt="image" src="https://github.com/user-attachments/assets/bb354a29-a4f2-4e86-9be3-29bcc08a8fd4" />
 
   <figcaption>
-    Figure: September 2001 vs August 2001 comparison network graph - Cancelled weigted edges.
+    Figure: Pre vs Post 9/11 comparison network graph - Cancelled weigted edges.
   </figcaption>
 </figure>
 
