@@ -185,7 +185,7 @@ Because of the growth of available meaningful words, later years has a naturally
 ## Word clouds visualization
 The word clouds shows the most important TF-IDF terms in the collected airports texts. The TF-IDF words highlights the words that is relative importen for a document compared to the full collections of documents. THis makes it useful to identify words that charactirase specifik periods. In the follwoing word clouds visualization there can be observed how the language was used in the hole poriode from 2003-2025 and after this there can be observed an comparison on how the language used by the airorts have changed over time. There will here be look upon a period from 2003-2014 that will be compared to 2015-2025. To make these word cloud visualization it was needed to have a lot of filtering, because some words such as "airport", destination location and city names was really generic for all the periods and because of this it would not be interresting to look upon the genaric most frequent words, because this wouldn't give an insigt of how the periods have changed over time.
 <figure>
-  <img width="3895" height="2024" alt="billede" src="https://github.com/user-attachments/assets/5236cddf-5351-49b7-b3bd-96a9f33acf9a" />
+  <img width="1019" alt="billede" src="https://github.com/user-attachments/assets/5236cddf-5351-49b7-b3bd-96a9f33acf9a" />
   <figcaption>
     Figure: Shows the TF-IDF wordcloud for the whole periode 2003-2025
   </figcaption>
