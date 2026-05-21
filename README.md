@@ -172,7 +172,7 @@ The reason this analysis starts from 2003 and not 2001 or before where it really
 This limitation of available text is important when interpreting the results. Such as in 2003 we were only able to gather around 15273 meaningful tokens, and this number of tokens has substantially increased over the years which also can be observed in the figure below. Already in 2025, we were able to gather 905719 tokens. One token describes one word, so the available meaningful words grows from 15273 words to 905719 words.
 
 <figure>
-  <img width="877" height="468" alt="billede" src="https://github.com/user-attachments/assets/a0983182-d58e-480d-a17b-feac7ab973ae" />
+  <img width="877" height="468" alt="billede" src="https://github.com/user-attachments/assets/38e5ace2-5c10-449a-933e-1c927e231ca5" />
   <figcaption>
     Figure: Shows the increasing available tokens on Wikipedia 
   </figcaption>
@@ -185,7 +185,7 @@ Because of the growth of available meaningful words, later years has a naturally
 ## Word clouds visualization
 The word clouds shows the most important TF-IDF terms in the collected airports texts. The TF-IDF words highlights the words that is relative importen for a document compared to the full collections of documents. THis makes it useful to identify words that charactirase specifik periods. In the follwoing word clouds visualization there can be observed how the language was used in the hole poriode from 2003-2025 and after this there can be observed an comparison on how the language used by the airorts have changed over time. There will here be look upon a period from 2003-2014 that will be compared to 2015-2025. To make these word cloud visualization it was needed to have a lot of filtering, because some words such as "airport", destination location and city names was really generic for all the periods and because of this it would not be interresting to look upon the genaric most frequent words, because this wouldn't give an insigt of how the periods have changed over time.
 <figure>
-  <img width="3895" height="2024" alt="billede" src="https://github.com/user-attachments/assets/e3d3edf2-5b81-4bd4-a220-0020998e24fa" />
+  <img width="3895" height="2024" alt="billede" src="https://github.com/user-attachments/assets/5236cddf-5351-49b7-b3bd-96a9f33acf9a" />
   <figcaption>
     Figure: Shows the TF-IDF wordcloud for the whole periode 2003-2025
   </figcaption>
@@ -195,14 +195,14 @@ In the word cloud visualization above it can be observed that many of the larges
 The same goes for the periods from 2003-2014 and 2015-2025, in those periods it was also primaerly the administration of the airports and the avaition that is most frequent.
 
 <figure>
-  <img width="790" height="431" alt="billede" src="https://github.com/user-attachments/assets/dddeeac2-2a3a-4b47-ab99-73c783a36591" />
+  <img width="790" height="431" alt="billede" src="https://github.com/user-attachments/assets/ef0315fe-e9b0-477c-9360-b060f49e8ad0" />
   <figcaption>
     Figure: Shows the TF-IDF wordcloud fro the peiod 2003-2014
   </figcaption>
 </figure>
 
 <figure>
-  <img width="790" height="431" alt="billede" src="https://github.com/user-attachments/assets/9b37120b-969a-45fb-8231-408e1cef8be0" />
+ <img width="790" height="431" alt="billede" src="https://github.com/user-attachments/assets/f9d1c964-8ca4-4b71-aae9-4efc763d6e22" />
   <figcaption>
     Figure: Shows the TF-IDF wordcloud fro the peiod 2015-2025
   </figcaption>
@@ -214,7 +214,7 @@ In the two word clouds visualizations above there can be observed, that there ha
 The figure below shows the TF-IDF scores for selected security-relates terms over time. The terms incluide security, TSA, screening, teroor, terrorsim, attack, September Elven and safety. The reason 9/11 is written as september eleven was because it prevented 9/11 to be filtered out of the documents and therefore september eleven replaced every place where 9/11 was written. These terms were chosen because they are related to airport secuirty and the broader consequences of 9/11.
 
 <figure>
-  <img width="1028" height="545" alt="billede" src="https://github.com/user-attachments/assets/c095d32b-a322-4922-964f-77a309c71973" />
+  <img width="1019" height="545" alt="billede" src="https://github.com/user-attachments/assets/2b0cf4fa-70e5-4d93-93a2-c18501698b05" />
   <figcaption>
     Figure: Shows the development of the term specific TF-IDF 
   </figcaption>
