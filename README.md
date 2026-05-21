@@ -48,7 +48,7 @@ This means that cancellation count is the most important indicator in this compa
 
 <table>
   <tr>
-    <th colspan="6" align="center">Change from 2001 Pre 911 to 2001 Post 911</th>
+    <th colspan="6" align="center">Change from 2001 Pre 9/11 to 2001 Post 9/11</th>
   </tr>
   <tr>
     <th>Compared Airports</th>
